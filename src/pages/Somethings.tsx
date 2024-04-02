@@ -14,17 +14,13 @@ export const SomethingsPage = () => {
   return (
     <>
       <div className="flex flex-row gap-12 border">
-        <div className="flex flex-col border border-red-300 gap-2">
+        <div className="flex flex-col border border-red-300 gap-2 sticky">
           {somethings.map((item) => (
             <NavLink
               className={({ isActive }) => {
                 return isActive
-                  ? ` ${buttonVariants({
-                      variant: "link",
-                    })} text-xl font-semibold `
-                  : `${buttonVariants({
-                      variant: "link",
-                    })} text-xl opacity-70 `;
+                  ? ` text-primary underline-offset-4 hover:underline text-xl font-semibold pr-12 border`
+                  : `text-primary underline-offset-4 hover:underline text-xl opacity-70 pr-12 border`;
               }}
               key={item}
               to={`/somethings/${item}`}

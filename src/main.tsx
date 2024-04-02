@@ -6,6 +6,7 @@ import SomethingsPage from "./pages/Somethings";
 import NotFound from "./pages/404";
 import "./styles/index.css";
 import SomethingPage from "./pages/Something";
+import { ThemeProvider } from "./components/ui/theme-provider";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,6 +31,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </React.StrictMode>
 );
