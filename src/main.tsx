@@ -7,11 +7,32 @@ import NotFound from "./pages/404";
 import "./styles/index.css";
 import SomethingPage from "./pages/Something";
 import { ThemeProvider } from "./components/ui/theme-provider";
+import ProgramPage from "./pages/Program";
+import AboutPage from "./pages/About";
+import GalleryPage from "./pages/Gallery";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomePage />,
     errorElement: <NotFound />,
+    children: [
+      {
+        path: "/Program",
+        element: <ProgramPage />,
+      },
+      {
+        path: "/About",
+        element: <AboutPage />,
+      },
+      {
+        path: "/Gallery",
+        element: <GalleryPage />,
+      },
+    ],
+  },
+  {
+    path: "/Home",
+    element: <HomePage />,
   },
   {
     path: "/somethings",

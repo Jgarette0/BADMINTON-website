@@ -1,10 +1,11 @@
-import DarkMode from "@/components/Darkmode";
-import { Button } from "@/components/ui/button";
+import Header from "@/components/Header";
+import { Outlet } from "react-router-dom";
 
 export const HomePage = () => {
   return (
     <>
-      <DarkMode />
+      <Header />
+      <Outlet />
     </>
   );
 };
