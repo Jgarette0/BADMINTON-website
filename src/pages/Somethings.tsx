@@ -1,4 +1,3 @@
-import { buttonVariants } from "@/components/ui/button";
 import { NavLink, Outlet } from "react-router-dom";
 
 export const SomethingsPage = () => {

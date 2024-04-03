@@ -22,7 +22,7 @@ const router = createBrowserRouter([
         element: <SomethingPage />,
       },
       {
-        path: "/somethings/Dialog",
+        path: "/somethings/Layout Grid",
         element: <NotFound />,
       },
     ],
