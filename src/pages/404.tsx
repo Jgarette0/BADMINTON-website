@@ -1,9 +1,9 @@
-import HomePage from "./Global";
+import Header from "@/components/Header";
 
 function NotFound() {
   return (
     <>
-      <HomePage />
+      <Header />
       <div>404 Not Found!</div>
     </>
   );

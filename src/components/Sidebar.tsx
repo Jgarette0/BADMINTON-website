@@ -29,22 +29,24 @@ export function SidebarRoute() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <AlignRight />
+        <AlignRight size={40} strokeWidth={1.25} />
       </SheetTrigger>
       <SheetContent>
-        <SheetHeader className="flex flex-col place-items-start gap-4">
-          <span>
+        <SheetHeader className="flex flex-col place-items-start gap-4 ">
+          <div className="h-8">
             <DarkMode />
-          </span>
+          </div>
           <Link to="/">
             <SheetClose asChild>
-              <div className="flex flex-row place-items-baseline gap-2 justify-center">
-                <img src="vite.svg" alt="" />
-                <SheetTitle>AB BADMINTON</SheetTitle>
+              <div className="flex flex-row place-items-end gap-2 justify-center">
+                <img src="abs.png" className="w-12 h-12" alt="" />
+                <SheetTitle className="text-gold text-4xl">
+                  BADMINTON
+                </SheetTitle>
               </div>
             </SheetClose>
           </Link>
-          <SheetDescription className="">
+          <SheetDescription className=" flex flex-col place-items-center w-full">
             Navigate your dreams through Sports
           </SheetDescription>
         </SheetHeader>

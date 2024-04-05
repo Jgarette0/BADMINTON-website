@@ -2,10 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
@@ -17,7 +17,9 @@ module.exports = {
       },
     },
     extend: {
+      blur: { xs: "1px" },
       colors: {
+        gold: "#fad12b",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -57,6 +59,9 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      width: {
+        "1k": "1000px",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -70,8 +75,32 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        spotlight: "spotlight 2s ease .75s 1 forwards",
+        spotlights: "spotlights 2s ease .75s 1 forwards",
+      },
+      keyframes: {
+        spotlight: {
+          "0%": {
+            opacity: 0,
+            transform: "translate(-72%, -62%) scale(0)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate(-50%,-40%) scale(1)",
+          },
+        },
+        spotlights: {
+          "0%": {
+            opacity: 0,
+            transform: "translate(72%, 62%) scale(0)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate(10%,10%) scale(1)",
+          },
+        },
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

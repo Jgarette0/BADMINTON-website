@@ -1,5 +1,11 @@
+import SpotlightHome from "@/components/ui/spotlighthome";
+
 export const HomePage = () => {
-  return <>Hello this is Home page!!</>;
+  return (
+    <>
+      <SpotlightHome />
+    </>
+  );
 };
 
 export default HomePage;

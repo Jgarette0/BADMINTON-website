@@ -5,6 +5,7 @@ import GlobalPage from "./pages/Global";
 import SomethingsPage from "./pages/Somethings";
 import NotFound from "./pages/404";
 import "./styles/index.css";
+import "./styles/global.css";
 import SomethingPage from "./pages/Something";
 import { ThemeProvider } from "./components/ui/theme-provider";
 import ProgramPage from "./pages/Program";
@@ -55,7 +56,9 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <RouterProvider router={router} />
+      <div className="items-center w-full border border-red px-4 max-1k mx-auto overflow-hidden box-border border-none">
+        <RouterProvider router={router} />
+      </div>
     </ThemeProvider>
   </React.StrictMode>
 );
