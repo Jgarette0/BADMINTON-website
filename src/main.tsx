@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import HomePage from "./pages/Home";
+import GlobalPage from "./pages/Global";
 import SomethingsPage from "./pages/Somethings";
 import NotFound from "./pages/404";
 import "./styles/index.css";
@@ -10,10 +10,11 @@ import { ThemeProvider } from "./components/ui/theme-provider";
 import ProgramPage from "./pages/Program";
 import AboutPage from "./pages/About";
 import GalleryPage from "./pages/Gallery";
+import HomePage from "./pages/Home";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />,
+    element: <GlobalPage />,
     errorElement: <NotFound />,
     children: [
       {
@@ -28,12 +29,13 @@ const router = createBrowserRouter([
         path: "/Gallery",
         element: <GalleryPage />,
       },
+      {
+        path: "/Home",
+        element: <HomePage />,
+      },
     ],
   },
-  {
-    path: "/Home",
-    element: <HomePage />,
-  },
+
   {
     path: "/somethings",
     element: <SomethingsPage />,
