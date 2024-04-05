@@ -9,13 +9,23 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { AlignRight } from "lucide-react";
+import { AlignRight, ChevronRight } from "lucide-react";
 
 import { Link } from "react-router-dom";
 import DarkMode from "./Darkmode";
+// import { Card } from "./ui/card";
 
 export function SidebarRoute() {
-  const pages = ["Home", "Program", "Gallery", "About"];
+  const pages = [
+    "Home",
+    "Program",
+    "Gallery",
+    "About",
+    "FAQs",
+    "Blog",
+    "Contact",
+    "Shop",
+  ];
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -38,71 +48,38 @@ export function SidebarRoute() {
             Navigate your dreams through Sports
           </SheetDescription>
         </SheetHeader>
+        <div className="flex flex-col w-full h-8  justify-center">
+          <hr />
+        </div>
         <SheetFooter>
-          <div className="flex-col md:hidden pl-2 justify-center flex place-items-start mt-4">
+          <div className=" w-full mt-4">
+            <SheetClose asChild>
+              <Button className="text-xl w-full py-7 rounded-full font-semibold">
+                Sign In
+              </Button>
+            </SheetClose>
+          </div>
+          <div className="flex flex-col w-full h-8  justify-center">
+            <hr />
+          </div>
+          <div className="flex-col md:hidden justify-center flex place-items-center mt-4 gap-2">
             {pages.map((item) => (
               <Link to={`/${item}`}>
                 <SheetClose asChild>
                   <Button
-                    className="text-xl font-semibold opacity-85"
-                    variant="link"
+                    className="text-xl font-semibold opacity-85 flex flex-row justify-between w-72 hover:scale-105"
+                    variant="ghost"
                   >
-                    {item}{" "}
+                    <div>{item}</div>
+                    <div>
+                      <ChevronRight />
+                    </div>
                   </Button>
                 </SheetClose>
               </Link>
             ))}
           </div>
-          {/* <div className="flex-col md:hidden pr-2 justify-center flex border place-items-end">
-            <Link to="/">
-              <SheetClose asChild>
-                <Button
-                  className="text-xl font-semibold opacity-85"
-                  variant="link"
-                >
-                  Home
-                </Button>
-              </SheetClose>
-            </Link>
-            <Link to="/Program">
-              <SheetClose asChild>
-                <Button
-                  className="text-xl font-semibold opacity-85"
-                  variant="link"
-                >
-                  Program
-                </Button>
-              </SheetClose>
-            </Link>
-            <Link to="/Gallery">
-              <SheetClose asChild>
-                <Button
-                  className="text-xl font-semibold opacity-85"
-                  variant="link"
-                >
-                  Gallery
-                </Button>
-              </SheetClose>
-            </Link>
-            <Link to="/About">
-              <SheetClose asChild>
-                <Button
-                  className="text-xl font-semibold opacity-85"
-                  variant="link"
-                >
-                  About
-                </Button>
-              </SheetClose>
-            </Link>
-          </div> */}
         </SheetFooter>
-        <div className=" fixed bottom-4 right-14">
-          <SheetClose asChild>
-            <Button className="text-xl font-semibold py-6 px-16">
-              Sign In
-            </Button>
-          </SheetClose>
-        </div>
       </SheetContent>
     </Sheet>
   );
