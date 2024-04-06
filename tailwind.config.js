@@ -104,3 +104,4 @@ module.exports = {
   },
   plugins: [require("tailwindcss-animate")],
 };
+// bg-gradient-to-b from-pink-50 to-red-100

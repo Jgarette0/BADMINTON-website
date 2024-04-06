@@ -13,6 +13,7 @@ import { AlignRight, ChevronRight } from "lucide-react";
 
 import { Link } from "react-router-dom";
 import DarkMode from "../Darkmode";
+import { ScrollArea } from "../ui/scroll-area";
 // import { Card } from "./ui/card";
 
 export function SidebarRoute() {
@@ -39,7 +40,7 @@ export function SidebarRoute() {
           <Link to="/">
             <SheetClose asChild>
               <div className="flex flex-row place-items-end gap-2 justify-center">
-                <img src="abs.png" className="w-12 h-12" alt="" />
+                <img src="img/abbs.png" className="w-12 h-12" alt="" />
                 <SheetTitle className="text-gold text-4xl">
                   BADMINTON
                 </SheetTitle>
@@ -50,7 +51,7 @@ export function SidebarRoute() {
             Navigate your dreams through Sports
           </SheetDescription>
         </SheetHeader>
-        <div className="flex flex-col w-full h-8  justify-center">
+        <div className="flex flex-col w-full h-8 pt-5">
           <hr />
         </div>
         <SheetFooter>
@@ -64,23 +65,25 @@ export function SidebarRoute() {
           <div className="flex flex-col w-full h-8  justify-center">
             <hr />
           </div>
-          <div className="flex-col md:hidden justify-center flex place-items-center mt-4 gap-2">
-            {pages.map((item) => (
-              <Link to={`/${item}`}>
-                <SheetClose asChild>
-                  <Button
-                    className="text-xl font-semibold opacity-85 flex flex-row justify-between w-72 hover:scale-105"
-                    variant="ghost"
-                  >
-                    <div>{item}</div>
-                    <div>
-                      <ChevronRight />
-                    </div>
-                  </Button>
-                </SheetClose>
-              </Link>
-            ))}
-          </div>
+          <ScrollArea className="h-[450px] rounded-md">
+            <div className="flex-col md:hidden justify-center flex place-items-center mt-4 gap-2">
+              {pages.map((item) => (
+                <Link to={`/${item}`}>
+                  <SheetClose asChild>
+                    <Button
+                      className="text-xl font-semibold opacity-85 flex flex-row justify-between w-72 hover:scale-105"
+                      variant="ghost"
+                    >
+                      <div>{item}</div>
+                      <div>
+                        <ChevronRight />
+                      </div>
+                    </Button>
+                  </SheetClose>
+                </Link>
+              ))}
+            </div>
+          </ScrollArea>
         </SheetFooter>
       </SheetContent>
     </Sheet>

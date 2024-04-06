@@ -8,7 +8,9 @@ export const PagesRouter = () => {
       {navbar.map((item) => (
         <NavLink
           className={({ isActive }) => {
-            return isActive ? ` font-bold text-xl` : `font-semibold text-xl`;
+            return isActive
+              ? ` font-semibold text-xl`
+              : ` text-xl hover:opacity-70`;
           }}
           key={item}
           to={`/${item}`}

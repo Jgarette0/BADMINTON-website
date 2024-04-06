@@ -1,17 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { ThemeProvider } from "./components/ui/theme-provider";
 import GlobalPage from "./pages/Global";
 import SomethingsPage from "./pages/Somethings";
 import NotFound from "./pages/404";
-import "./styles/index.css";
-import "./styles/global.css";
 import SomethingPage from "./pages/Something";
-import { ThemeProvider } from "./components/ui/theme-provider";
 import ProgramPage from "./pages/Program";
 import AboutPage from "./pages/About";
 import GalleryPage from "./pages/Gallery";
 import HomePage from "./pages/Home";
+import "./styles/index.css";
+import "./styles/global.css";
 const router = createBrowserRouter([
   {
     path: "/",

@@ -9,7 +9,7 @@ export const Header = () => {
       <div className="flex flex-row justify-between h-20 md:w-1k m-auto gap-2 sticky place-items-center bg-transparent">
         <NavLink to="/">
           <img
-            src="abbs.png"
+            src="img/abbs.png"
             className="w-16 h-16 transition-transform duration-500 ease-in-out hover:-rotate-12"
             alt="Logo"
           />
