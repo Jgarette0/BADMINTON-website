@@ -6,7 +6,7 @@ import SidebarRoute from "./Sidebar";
 export const Header = () => {
   return (
     <>
-      <div className="flex flex-row justify-between h-20 md:w-1k m-auto gap-2 sticky place-items-center bg-transparent">
+      <div className="flex flex-row justify-between h-20 md:w-1k m-auto gap-2 sticky place-items-center bg-transparent w-full ">
         <NavLink to="/">
           <img
             src="img/abbs.png"

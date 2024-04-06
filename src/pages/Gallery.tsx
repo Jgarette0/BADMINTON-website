@@ -1,7 +1,9 @@
+import DotBackgroundDemo from "@/components/Gallery/Bg";
+
 export const GalleryPage = () => {
   return (
     <>
-     hello gallery
+      <DotBackgroundDemo />
     </>
   );
 };

@@ -17,6 +17,9 @@ module.exports = {
       },
     },
     extend: {
+      fontSize: {
+        "10xl": "14rem",
+      },
       blur: { xs: "1px" },
       colors: {
         gold: "#fad12b",
@@ -60,7 +63,7 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       width: {
-        "1k": "1000px",
+        "1k": "1056px",
       },
       keyframes: {
         "accordion-down": {
@@ -77,6 +80,7 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
         spotlight: "spotlight 2s ease .75s 1 forwards",
         spotlights: "spotlights 2s ease .75s 1 forwards",
+        "2000ms": "2000ms",
       },
       keyframes: {
         spotlight: {

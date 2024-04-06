@@ -56,7 +56,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className="items-center w-full border border-red px-4 max-1k mx-auto overflow-hidden box-border border-none">
+      <div className="flex flex-col place-items-center w-full border border-red px-4 max-1k  overflow-hidden box-border border-none">
         <RouterProvider router={router} />
       </div>
     </ThemeProvider>
