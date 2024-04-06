@@ -18,7 +18,7 @@ export function DarkMode() {
         <Button
           variant="ghost"
           size="icon"
-          className="absolute left-4 top-4 rounded-sm"
+          className="absolute left-4 top-4 rounded-sm border-none"
         >
           <Sun
             size={36}

@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "@/utils/cn";
-export const TextGenerateEffect = ({
+
+export const TextAnimation = ({
   words,
   className,
 }: {
@@ -10,7 +11,6 @@ export const TextGenerateEffect = ({
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
-
   useEffect(() => {
     animate(
       "span",
@@ -18,8 +18,8 @@ export const TextGenerateEffect = ({
         opacity: 1,
       },
       {
-        duration: 2,
-        delay: stagger(0.3),
+        duration: 3,
+        delay: stagger(0.4),
       }
     );
   }, [scope.current]);
@@ -29,7 +29,10 @@ export const TextGenerateEffect = ({
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
           return (
-            <motion.span key={word + idx} className="text-light opacity-0">
+            <motion.span
+              key={word + idx}
+              className="dark:text-white text-black opacity-0"
+            >
               {word}{" "}
             </motion.span>
           );
@@ -40,13 +43,12 @@ export const TextGenerateEffect = ({
 
   return (
     <div className={cn("font-bold", className)}>
-      <div className="mt-16 a">
-        <div className=" text-light md:hover:text-black text-7xl scale-90 md:text-9xl leading-none md:tracking-widest transition-all duration-2000ms ease-in-out md:hover:scale-105 inline-block transform  md:hover:-skew-y-6 -skew-y-6 md:-skew-y-0 md:hover:bg-gold rounded-full md:py-16 hover:-skew-y-0 font-dahlia sm:text-center ">
+      <div className="mt-4">
+        <div className=" text-dark text-xl md:text-3xl font-normal tracking-wider select-none">
           {renderWords()}
-          <div className="text-xl md:w-1k tracking-tighter font-semibold opacity-80 font-sans"></div>
         </div>
       </div>
     </div>
   );
 };
-export default TextGenerateEffect;
+export default TextAnimation;

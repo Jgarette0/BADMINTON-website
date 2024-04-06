@@ -17,8 +17,11 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        dahlia: ["Dahlia Medium", "sans-serif"],
+      },
       fontSize: {
-        "10xl": "14rem",
+        "10xl": "9rem",
       },
       blur: { xs: "1px" },
       colors: {
@@ -63,7 +66,7 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       width: {
-        "1k": "1056px",
+        "1k": "1024px",
       },
       keyframes: {
         "accordion-down": {

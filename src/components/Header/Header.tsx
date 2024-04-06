@@ -6,7 +6,7 @@ import SidebarRoute from "./Sidebar";
 export const Header = () => {
   return (
     <>
-      <div className="flex flex-row justify-between h-20 md:w-1k m-auto gap-2 sticky place-items-center bg-transparent w-full ">
+      <div className="flex flex-row justify-between h-20 md:w-1k gap-2 sticky place-items-center bg-transparent w-full ">
         <NavLink to="/">
           <img
             src="img/abbs.png"
@@ -21,8 +21,8 @@ export const Header = () => {
 
         <div className=" flex-col md:flex-row hidden gap-8 place-items-center justify-center md:flex">
           <PagesRouter />
-          <Button className="text-lg rounded-full pt-6 pb-7 text-center px-7 font-semibold">
-            Sign In
+          <Button className="text-lg rounded-full py-6 text-center px-7 font-semibold opacity-90 hover:opacity-100">
+            Sign in
           </Button>
         </div>
       </div>
