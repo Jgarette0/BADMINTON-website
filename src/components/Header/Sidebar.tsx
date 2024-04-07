@@ -30,7 +30,7 @@ export function SidebarRoute() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <AlignRight size={40} strokeWidth={1.25} />
+        <AlignRight size={28} strokeWidth={1.25} />
       </SheetTrigger>
       <SheetContent>
         <SheetHeader className="flex flex-col place-items-start gap-4 ">

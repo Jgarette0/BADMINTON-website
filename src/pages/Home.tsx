@@ -5,7 +5,7 @@ import Spotlight from "@/components/ui/spotlight";
 export const HomePage = () => {
   return (
     <>
-      <Card className="md:w-1k px-4 h-screen flex flex-col place-items-center">
+      <Card className="md:w-1k px-4 flex flex-col place-items-center border-none">
         <Spotlight />
         <HomeTitle />
       </Card>
