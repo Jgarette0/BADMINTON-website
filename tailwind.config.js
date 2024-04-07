@@ -19,6 +19,7 @@ module.exports = {
     extend: {
       fontFamily: {
         dahlia: ["Dahlia Medium", "sans-serif"],
+        mona: ["Mona Sans", "sans-serif"],
       },
       fontSize: {
         "10xl": "9rem",

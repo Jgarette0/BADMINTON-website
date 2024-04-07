@@ -14,7 +14,7 @@ export function HomeTitle() {
         <TextAnimation words={description} />
       </div>
       <div className="h-32 md:h-40 flex flex-col place-items-center justify-center w-full">
-        <Button className=" rounded-full px-8 py-8  text-lg md:text-xl tracking-tighter font-semibold">
+        <Button className=" rounded-full px-8 py-8  text-lg md:text-xl tracking-tighter font-semibold font-mona">
           Get started
         </Button>
       </div>
