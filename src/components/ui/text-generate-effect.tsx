@@ -41,7 +41,7 @@ export const TextGenerateEffect = ({
   return (
     <div className={cn("font-bold", className)}>
       <div className="mt-16 a">
-        <div className=" text-light  text-7xl scale-90 md:text-9xl leading-none md:tracking-widest transition-all duration-2000ms ease-in-out md:hover:scale-105 inline-block transform  md:hover:-skew-y-6 -skew-y-6 md:-skew-y-0 md:hover:bg-gold rounded-full md:py-16 hover:-skew-y-0 font-dahlia sm:text-center ">
+        <div className=" text-light  text-7xl scale-90 md:text-9xl leading-none md:tracking-widest transition-all duration-2000ms ease-in-out md:hover:scale-105 inline-block transform  md:hover:-skew-y-6 -skew-y-6 md:-skew-y-0 md:hover:bg-gold rounded-full md:py-6 hover:-skew-y-0 font-dahlia sm:text-center ">
           {renderWords()}
           <div className="text-xl md:w-1k tracking-tighter font-semibold opacity-80 font-sans"></div>
         </div>

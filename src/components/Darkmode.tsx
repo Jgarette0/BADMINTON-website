@@ -21,12 +21,12 @@ export function DarkMode() {
           className="absolute left-4 top-4 rounded-sm border-none"
         >
           <Sun
-            size={28}
+            size={24}
             strokeWidth={1.25}
             className=" rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
           />
           <Moon
-            size={28}
+            size={24}
             strokeWidth={1.25}
             className="absolute  rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"
           />

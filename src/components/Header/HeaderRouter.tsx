@@ -9,8 +9,8 @@ export const PagesRouter = () => {
         <NavLink
           className={({ isActive }) => {
             return isActive
-              ? ` font-semibold text-md font-mona opacity-90`
-              : ` text-md hover:opacity-70 font-mona font-semibold opacity-90`;
+              ? ` font-semibold text-md font-mona opacity-90 select-none`
+              : ` text-md hover:opacity-70 font-mona font-semibold opacity-90 select-none`;
           }}
           key={item}
           to={`/${item}`}

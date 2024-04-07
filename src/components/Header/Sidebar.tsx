@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/sheet";
 import { AlignRight, ChevronRight } from "lucide-react";
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import DarkMode from "../Darkmode";
 import { ScrollArea } from "../ui/scroll-area";
 // import { Card } from "./ui/card";
@@ -55,9 +55,9 @@ export function SidebarRoute() {
           <hr />
         </div>
         <SheetFooter>
-          <div className=" w-full mt-4">
+          <div className="mx-auto mt-4">
             <SheetClose asChild>
-              <Button className="text-xl w-full py-7 rounded-full font-semibold">
+              <Button className=" mx-auto py-8 px-8 rounded-full font-semibold font-mona text-lg">
                 Sign In
               </Button>
             </SheetClose>
@@ -68,10 +68,17 @@ export function SidebarRoute() {
           <ScrollArea className="h-[450px] rounded-md">
             <div className="flex-col md:hidden justify-center flex place-items-center mt-4 gap-2">
               {pages.map((item) => (
-                <Link to={`/${item}`}>
+                <NavLink
+                  to={`/${item}`}
+                  className={({ isActive }) => {
+                    return isActive
+                      ? ` border border-light rounded-full bg-secondary`
+                      : `  hover:opacity-70`;
+                  }}
+                >
                   <SheetClose asChild>
                     <Button
-                      className="text-xl font-semibold opacity-85 flex flex-row justify-between w-72 hover:scale-105"
+                      className="text-lg font-semibold opacity-85 flex flex-row justify-between w-72 hover:opacity-90 py-8 px-8 font-mona"
                       variant="ghost"
                     >
                       <div>{item}</div>
@@ -80,7 +87,7 @@ export function SidebarRoute() {
                       </div>
                     </Button>
                   </SheetClose>
-                </Link>
+                </NavLink>
               ))}
             </div>
           </ScrollArea>
