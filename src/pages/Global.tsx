@@ -4,7 +4,6 @@ import HomePage from "./Home";
 
 export const GlobalPage = () => {
   const location = useLocation();
-
   return (
     <>
       <Header />

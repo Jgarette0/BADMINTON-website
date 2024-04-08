@@ -9,9 +9,9 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { AlignRight, ChevronRight } from "lucide-react";
+import { AlignRight } from "lucide-react";
 
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useMatch } from "react-router-dom";
 import DarkMode from "../Darkmode";
 import { ScrollArea } from "../ui/scroll-area";
 // import { Card } from "./ui/card";
@@ -27,6 +27,7 @@ export function SidebarRoute() {
     "Contact",
     "Shop",
   ];
+
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -62,29 +63,27 @@ export function SidebarRoute() {
               </Button>
             </SheetClose>
           </div>
-          <div className="flex flex-col w-full h-8  justify-center">
+          <div className="flex flex-col w-full h-1  justify-center">
             <hr />
           </div>
-          <ScrollArea className="h-[450px] rounded-md">
+          <ScrollArea className="h-[455px]">
             <div className="flex-col md:hidden justify-center flex place-items-center mt-4 gap-2">
               {pages.map((item) => (
                 <NavLink
                   to={`/${item}`}
                   className={({ isActive }) => {
                     return isActive
-                      ? ` border border-light rounded-full bg-secondary`
+                      ? `transition-transform duration-300 ease-in-out transform opacity-40 scale-90`
                       : `  hover:opacity-70`;
                   }}
                 >
                   <SheetClose asChild>
                     <Button
-                      className="text-lg font-semibold opacity-85 flex flex-row justify-between w-72 hover:opacity-90 py-8 px-8 font-mona"
-                      variant="ghost"
+                      className="text-lg font-semibold opacity-85 flex flex-row justify-center w-72 hover:opacity-90 py-11 px-8 font-mona "
+                      variant="secondary"
                     >
-                      <div>{item}</div>
-                      <div>
-                        <ChevronRight />
-                      </div>
+                      <div>{item.toUpperCase()}</div>
+                      {/* <div><ChevronRight className="w-4" /></div> */}
                     </Button>
                   </SheetClose>
                 </NavLink>
