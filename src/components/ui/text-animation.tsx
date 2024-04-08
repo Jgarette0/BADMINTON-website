@@ -44,7 +44,7 @@ export const TextAnimation = ({
   return (
     <div className={cn("font-bold", className)}>
       <div className="mt-4">
-        <div className=" text-dark text-xl md:text-3xl font-normal tracking-wider select-none">
+        <div className=" text-dark text-xl md:text-3xl font-normal tracking-wider select-none leading-none">
           {renderWords()}
         </div>
       </div>
