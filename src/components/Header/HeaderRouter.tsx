@@ -13,7 +13,7 @@ export const PagesRouter = () => {
               : ` text-md hover:opacity-70 font-mona font-semibold opacity-90 select-none`;
           }}
           key={item}
-          to={`/${item}`}
+          to={`/${item.toLowerCase()}`}
         >
           {item}
         </NavLink>
