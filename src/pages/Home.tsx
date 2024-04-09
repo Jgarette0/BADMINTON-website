@@ -1,3 +1,4 @@
+import AboutSection from "@/components/Home/HomeAbout";
 import HomeTitle from "@/components/Home/Hometitle";
 import InfiniteMovingCardsDemo from "@/components/Home/ImageInfinite";
 // import { Card } from "@/components/ui/card";
@@ -11,6 +12,7 @@ export const HomePage = () => {
         <HomeTitle />
       </div>
       <InfiniteMovingCardsDemo />
+      <AboutSection />
     </>
   );
 };
