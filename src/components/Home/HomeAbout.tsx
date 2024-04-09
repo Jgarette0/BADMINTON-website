@@ -27,7 +27,7 @@ function AboutSection() {
                   className="font-mona text-md py-8 px-8 font-semibold md:py-8 hover:bg-primary hover:text-secondary md:px-12 md:text-lg "
                   variant="secondary"
                 >
-                  Discover
+                  Explore
                 </Button>
               </Link>
             </div>

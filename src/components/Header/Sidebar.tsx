@@ -66,7 +66,7 @@ export function SidebarRoute() {
           <div className="flex flex-col w-full h-1  justify-center">
             <hr />
           </div>
-          <ScrollArea className="h-[455px]">
+          <ScrollArea className="h-[444px]">
             <div className="flex-col md:hidden justify-center flex place-items-center mt-4 gap-2">
               {pages.map((item) => (
                 <NavLink
