@@ -14,6 +14,14 @@ import "./styles/index.css";
 import "./styles/global.css";
 import LoadingSpinner from "./components/LoadingSpinner";
 import Draft from "./pages/Draft";
+import LocationPage from "./pages/Options/Location";
+import SettingsPage from "./pages/Options/Settings";
+import BillingPage from "./pages/Options/Billing";
+import SupportPage from "./pages/Options/Support";
+import TeamPage from "./pages/Options/Team";
+import ContactPage from "./pages/Options/Contact";
+import TermsPage from "./pages/Options/Terms";
+import DocsPage from "./pages/Options/Docs";
 
 const Render = () => {
   const [loading, setLoading] = useState(true);
@@ -46,6 +54,38 @@ const Render = () => {
         {
           path: "/Home",
           element: <HomePage />,
+        },
+        {
+          path: "/billing",
+          element: <BillingPage />,
+        },
+        {
+          path: "/settings",
+          element: <SettingsPage />,
+        },
+        {
+          path: "/support",
+          element: <SupportPage />,
+        },
+        {
+          path: "/team",
+          element: <TeamPage />,
+        },
+        {
+          path: "/contact",
+          element: <ContactPage />,
+        },
+        {
+          path: "/location",
+          element: <LocationPage />,
+        },
+        {
+          path: "/terms",
+          element: <TermsPage />,
+        },
+        {
+          path: "/docs",
+          element: <DocsPage />,
         },
       ],
     },

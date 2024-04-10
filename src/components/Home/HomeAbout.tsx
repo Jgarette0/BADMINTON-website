@@ -4,8 +4,7 @@ import DescriptionTextAnimate from "./DescriptionTextAnimation";
 
 function AboutSection() {
   const about = ` Combining years of competitive badminton experience, sports
- knowledge, and local expertise, our coaches, led by Coach Andrew
- Mitch, aim to provide tailor-made individual and group training
+ knowledge, and local expertise, our coaches, led by Coach Andrew, aim to provide tailor-made individual and group training
  programs that cater to the needs of young athletes, taking their
  game to the next level.`;
   return (
