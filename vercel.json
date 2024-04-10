@@ -1,0 +1,23 @@
+{
+  "routes": [
+    { "src": "/", "dest": "/" },
+    { "src": "/Program", "dest": "/" },
+    { "src": "/About", "dest": "/" },
+    { "src": "/Gallery", "dest": "/" },
+    { "src": "/Home", "dest": "/" },
+    { "src": "/billing", "dest": "/" },
+    { "src": "/settings", "dest": "/" },
+    { "src": "/support", "dest": "/" },
+    { "src": "/team", "dest": "/" },
+    { "src": "/contact", "dest": "/" },
+    { "src": "/location", "dest": "/" },
+    { "src": "/terms", "dest": "/" },
+    { "src": "/docs", "dest": "/" },
+    { "src": "/signin", "dest": "/" },
+    { "src": "/signup", "dest": "/" },
+    { "src": "/somethings", "dest": "/" },
+    { "src": "/somethings/:item", "dest": "/" },
+    { "src": "/somethings/Layout Grid", "dest": "/" },
+    { "src": "/test", "dest": "/" }
+  ]
+}
