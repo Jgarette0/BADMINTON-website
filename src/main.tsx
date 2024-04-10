@@ -22,7 +22,13 @@ import TeamPage from "./pages/Options/Team";
 import ContactPage from "./pages/Options/Contact";
 import TermsPage from "./pages/Options/Terms";
 import DocsPage from "./pages/Options/Docs";
-
+import { ClerkProvider } from "@clerk/clerk-react";
+import SignInPage from "./pages/Signin";
+import SignUpPage from "./pages/Signup";
+const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
+if (!PUBLISHABLE_KEY) {
+  throw new Error("Missing Publishable Key");
+}
 const Render = () => {
   const [loading, setLoading] = useState(true);
 
@@ -87,6 +93,14 @@ const Render = () => {
           path: "/docs",
           element: <DocsPage />,
         },
+        {
+          path: "/signin",
+          element: <SignInPage />,
+        },
+        {
+          path: "/signup",
+          element: <SignUpPage />,
+        },
       ],
     },
     {
@@ -110,11 +124,13 @@ const Render = () => {
   ]);
   return (
     <React.StrictMode>
-      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-        <div className="flex flex-col place-items-center w-screen md:w-full border border-red px-4 max-1k  overflow-hidden box-border border-none">
-          {loading ? <LoadingSpinner /> : <RouterProvider router={router} />}
-        </div>
-      </ThemeProvider>
+      <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
+        <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+          <div className="flex flex-col place-items-center w-screen md:w-full border border-red px-4 max-1k  overflow-hidden box-border border-none">
+            {loading ? <LoadingSpinner /> : <RouterProvider router={router} />}
+          </div>
+        </ThemeProvider>
+      </ClerkProvider>
     </React.StrictMode>
   );
 };

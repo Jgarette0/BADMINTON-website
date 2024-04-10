@@ -6,12 +6,13 @@ import {
   Github,
   Handshake,
   LifeBuoy,
-  LogIn,
   Mail,
   MapPin,
   MessageSquare,
+  Moon,
   PlusCircle,
   Settings,
+  Sun,
   Users,
 } from "lucide-react";
 
@@ -31,8 +32,12 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Link } from "react-router-dom";
+import { useTheme } from "@/components/ui/theme-provider";
+import SignOut from "./Auth/SignOut";
+import SignIns from "./Auth/SignIn";
 
 export function ToolList() {
+  const { setTheme } = useTheme();
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="outline-none border-none fixed right-4 bottom-4 md:right-8 md:bottom-8 opacity-80 rounded-full overflow-hidden z-50">
@@ -44,7 +49,15 @@ export function ToolList() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56 rounded-sm">
-        <DropdownMenuLabel>Shortcut Options</DropdownMenuLabel>
+        <DropdownMenuLabel>My Account</DropdownMenuLabel>
+        <DropdownMenuItem onClick={() => setTheme("light")}>
+          <Sun className="mr-2 h-4 w-4" />
+          Light Theme
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme("dark")}>
+          <Moon className="mr-2 h-4 w-4" />
+          Dark Theme
+        </DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
           <a href="https://dev.pinamungajan.com" target="_blank">
@@ -144,13 +157,9 @@ export function ToolList() {
           </DropdownMenuItem>
         </Link>
         <DropdownMenuSeparator />
-        <Link to="/signin">
-          <DropdownMenuItem>
-            <LogIn className="mr-2 h-4 w-4" />
-            <span>Sign in</span>
-            <DropdownMenuShortcut>⇧Z</DropdownMenuShortcut>
-          </DropdownMenuItem>
-        </Link>
+
+        <SignIns />
+        <SignOut />
       </DropdownMenuContent>
     </DropdownMenu>
   );

@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 import DescriptionTextAnimate from "./DescriptionTextAnimation";
+import SignInModal from "../Auth/SigninModal";
+import { SignedIn, SignedOut } from "@clerk/clerk-react";
 
 function AboutSection() {
   const about = ` Combining years of competitive badminton experience, sports
@@ -21,14 +23,19 @@ function AboutSection() {
               <DescriptionTextAnimate words={about} />
             </p>
             <div className="flex justify-center">
-              <Link to="/about">
-                <Button
-                  className="font-mona text-md py-8 px-8 font-semibold md:py-8 hover:bg-primary hover:text-secondary md:px-12 md:text-lg "
-                  variant="secondary"
-                >
-                  Explore
-                </Button>
-              </Link>
+              <SignedOut>
+                <SignInModal />
+              </SignedOut>
+              <SignedIn>
+                <Link to="/about">
+                  <Button
+                    className="font-mona text-md py-8 px-8 font-semibold md:py-8 hover:bg-primary hover:text-secondary md:px-12 md:text-lg "
+                    variant="secondary"
+                  >
+                    Explore
+                  </Button>
+                </Link>
+              </SignedIn>
             </div>
           </div>
           <div className="lg:max-w-xl lg:w-full lg:max-h-xl w-5/6  flex-row hidden md:flex place-items-center justify-end rounded-full">

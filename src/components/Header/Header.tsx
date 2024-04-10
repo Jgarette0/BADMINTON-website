@@ -2,6 +2,12 @@ import { NavLink } from "react-router-dom";
 import { Button } from "../ui/button";
 import PagesRouter from "./HeaderRouter";
 import SidebarRoute from "./Sidebar";
+import {
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from "@clerk/clerk-react";
 
 export const Header = () => {
   return (
@@ -21,12 +27,19 @@ export const Header = () => {
 
         <div className=" flex-col md:flex-row hidden gap-8 place-items-center justify-center md:flex">
           <PagesRouter />
-          <Button
-            className="text-md rounded-full py-6 text-center px-7 font-semibold opacity-90 hover:opacity-100  font-mona tracking-tighter"
-            variant="default"
-          >
-            Sign up
-          </Button>
+          <SignedOut>
+            <SignInButton>
+              <Button
+                className="text-md rounded-full py-6 text-center px-7 font-semibold opacity-90 hover:opacity-100  font-mona tracking-tighter"
+                variant="default"
+              >
+                Sign In
+              </Button>
+            </SignInButton>
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
         </div>
       </div>
     </>
