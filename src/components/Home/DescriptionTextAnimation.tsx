@@ -18,8 +18,8 @@ export const DescriptionTextAnimate = ({
         opacity: 1,
       },
       {
-        duration: 2,
-        delay: stagger(0.1),
+        duration: 3,
+        delay: stagger(0.3),
       }
     );
   }, [scope.current]);

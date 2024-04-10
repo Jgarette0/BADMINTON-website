@@ -1,10 +1,8 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 
 const KeyboardNavigation = () => {
   const navigate = useNavigate();
-  const location = useLocation();
 
   useEffect(() => {
     const handleKeyPress = (event: KeyboardEvent) => {

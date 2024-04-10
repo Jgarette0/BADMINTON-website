@@ -18,7 +18,7 @@ export const TextAnimation = ({
         opacity: 1,
       },
       {
-        duration: 3,
+        duration: 2,
         delay: stagger(0.4),
       }
     );

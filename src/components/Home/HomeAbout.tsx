@@ -31,14 +31,9 @@ function AboutSection() {
               </Link>
             </div>
           </div>
-          <div className="lg:max-w-xl lg:w-full md:w-1/2 w-5/6  flex-row hidden md:flex">
+          <div className="lg:max-w-xl lg:w-full lg:max-h-xl w-5/6  flex-row hidden md:flex place-items-center justify-end rounded-full">
             <img
-              className="object-cover object-center rounded "
-              alt="hero"
-              src="img/gbadminton.png"
-            />
-            <img
-              className="object-cover object-center"
+              className="object-cover object-center  select-none"
               alt="hero"
               src="img/badminton.png"
             />
