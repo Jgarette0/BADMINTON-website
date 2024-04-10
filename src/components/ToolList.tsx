@@ -7,7 +7,6 @@ import {
   Handshake,
   LifeBuoy,
   LogIn,
-  LogOut,
   Mail,
   MapPin,
   MessageSquare,
