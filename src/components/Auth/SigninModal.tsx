@@ -7,7 +7,7 @@ export function SignInModal() {
     <Dialog>
       <DialogTrigger asChild>
         <Button
-          className="font-mona text-md py-8 px-8 font-semibold md:py-8 hover:bg-primary hover:text-secondary md:px-12 md:text-lg "
+          className="font-mona transition-colors duration-400 ease-in-out text-md py-8 px-8 font-semibold md:py-8 border hover:border-primary md:px-12 md:text-lg "
           variant="secondary"
         >
           Explore

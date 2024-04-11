@@ -85,3 +85,15 @@ body {
     transform: rotate(360deg);
   }
 }
+
+/* .cl-formButtonPrimary {
+  background-color: #d4b34c;
+}
+
+.cl-formButtonPrimary:hover {
+  background-color: #d5ba69;
+} */
+
+.cl-card {
+  background-color: transparent !important;
+}

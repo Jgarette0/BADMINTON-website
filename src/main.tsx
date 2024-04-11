@@ -124,7 +124,29 @@ const Render = () => {
   ]);
   return (
     <React.StrictMode>
-      <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
+      <ClerkProvider
+        publishableKey={PUBLISHABLE_KEY}
+        appearance={{
+          elements: {
+            formButtonPrimary:
+              "bg-primary text-md font-semibold py-5 transition-all duration-300 ease-in-out rounded-sm text-secondary hover:opacity-80 hover:bg-primary hover:text-secondary",
+            formFieldInput:
+              "flex h-10 w-full border border-input bg-background px-3 py-5 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground placeholder:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 text-primary mt-2",
+            formFieldLabel:
+              "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-primary",
+            headerTitle: "text-primary",
+            headerSubtitle: "text-primary opacity-80",
+            dividerText: "text-primary",
+            dividerLine: "bg-primary",
+            socialButtonsBlockButton:
+              "bg-secondary text-md font-mona py-3 transition-all duration-300 ease-in-out rounded-sm text-primary transition-all duration-300 ease-in-out hover:bg-secondary hover:text-primary font-semibold hover:scale-105",
+            socialButtonsBlockButtonArrow: "text-primary",
+            footerActionText: "text-primary",
+            footerActionLink:
+              "text-gold hover:text-gold hover:scale-105 transition all duration-300 ease-in-out",
+          },
+        }}
+      >
         <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
           <div className="flex flex-col place-items-center w-screen md:w-full border border-red px-4 max-1k  overflow-hidden box-border border-none">
             {loading ? <LoadingSpinner /> : <RouterProvider router={router} />}

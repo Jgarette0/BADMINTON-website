@@ -19,9 +19,9 @@ function AboutSection() {
               <br />
               Training Camp
             </h1>
-            <p className="mb-8 leading-relaxed font-mona md:text-lg ">
+            <div className="mb-8 leading-relaxed font-mona md:text-lg ">
               <DescriptionTextAnimate words={about} />
-            </p>
+            </div>
             <div className="flex justify-center">
               <SignedOut>
                 <SignInModal />
@@ -29,7 +29,7 @@ function AboutSection() {
               <SignedIn>
                 <Link to="/about">
                   <Button
-                    className="font-mona text-md py-8 px-8 font-semibold md:py-8 hover:bg-primary hover:text-secondary md:px-12 md:text-lg "
+                    className="font-mona transition-all duration-400 ease-in-out text-md py-8 px-8 font-semibold md:py-8 hover:bg-primary hover:text-secondary md:px-12 md:text-lg "
                     variant="secondary"
                   >
                     Explore

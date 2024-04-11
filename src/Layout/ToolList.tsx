@@ -157,7 +157,6 @@ export function ToolList() {
           </DropdownMenuItem>
         </Link>
         <DropdownMenuSeparator />
-
         <SignIns />
         <SignOut />
       </DropdownMenuContent>
