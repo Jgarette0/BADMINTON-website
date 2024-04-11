@@ -12,8 +12,8 @@ import {
 import { AlignRight } from "lucide-react";
 
 import { Link, NavLink } from "react-router-dom";
-import DarkMode from "../Darkmode";
 import { ScrollArea } from "../ui/scroll-area";
+import DarkMode from "@/Layout/Darkmode";
 // import { Card } from "./ui/card";
 
 export function SidebarRoute() {

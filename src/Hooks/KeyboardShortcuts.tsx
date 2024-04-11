@@ -21,7 +21,7 @@ const KeyboardNavigation = () => {
         navigate("/terms");
       } else if ((event.metaKey || event.shiftKey) && key === "d") {
         navigate("/docs");
-      } else if ((event.metaKey || event.shiftKey) && key === "h") {
+      } else if ((event.metaKey || event.shiftKey) && key === "u") {
         navigate("/support");
       } else if ((event.metaKey || event.shiftKey) && key === "g") {
         window.open("https://github.com/Jgarette0/BADMINTON-website", "_blank");
@@ -29,6 +29,10 @@ const KeyboardNavigation = () => {
         window.open("https://dev.pinamungajan.com", "_blank");
       } else if ((event.metaKey || event.shiftKey) && key === "z") {
         navigate("/signin");
+      } else if ((event.metaKey || event.shiftKey) && key === "o") {
+        navigate("/test");
+      } else if ((event.metaKey || event.shiftKey) && key === "h") {
+        navigate("/");
       }
     };
 

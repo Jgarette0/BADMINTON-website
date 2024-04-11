@@ -33,8 +33,8 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Link } from "react-router-dom";
 import { useTheme } from "@/components/ui/theme-provider";
-import SignOut from "./Auth/SignOut";
-import SignIns from "./Auth/SignIn";
+import SignOut from "../components/Auth/SignOut";
+import SignIns from "../components/Auth/SignIn";
 
 export function ToolList() {
   const { setTheme } = useTheme();
@@ -85,7 +85,7 @@ export function ToolList() {
             <DropdownMenuItem>
               <LifeBuoy className="mr-2 h-4 w-4" />
               <span>Support</span>
-              <DropdownMenuShortcut>⇧G</DropdownMenuShortcut>
+              <DropdownMenuShortcut>⇧U</DropdownMenuShortcut>
             </DropdownMenuItem>
           </Link>
         </DropdownMenuGroup>

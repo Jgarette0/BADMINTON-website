@@ -12,8 +12,7 @@ import GalleryPage from "./pages/Gallery";
 import HomePage from "./pages/Home";
 import "./styles/index.css";
 import "./styles/global.css";
-import LoadingSpinner from "./components/LoadingSpinner";
-import Draft from "./pages/Draft";
+import Draft from "./draft/Draft";
 import LocationPage from "./pages/Options/Location";
 import SettingsPage from "./pages/Options/Settings";
 import BillingPage from "./pages/Options/Billing";
@@ -25,6 +24,7 @@ import DocsPage from "./pages/Options/Docs";
 import { ClerkProvider } from "@clerk/clerk-react";
 import SignInPage from "./pages/Signin";
 import SignUpPage from "./pages/Signup";
+import LoadingSpinner from "./Layout/LoadingSpinner";
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 if (!PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key");
