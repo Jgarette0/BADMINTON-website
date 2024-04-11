@@ -95,5 +95,5 @@ body {
 } */
 
 .cl-card {
-  background-color: transparent !important;
+  background-color: hsl(var(--background));
 }

@@ -15,7 +15,6 @@ import { Link, NavLink } from "react-router-dom";
 import { ScrollArea } from "../ui/scroll-area";
 import DarkMode from "@/Layout/Darkmode";
 import {
-  SignInButton,
   SignedIn,
   SignedOut,
   UserButton,
@@ -65,11 +64,11 @@ export function SidebarRoute() {
           <div className="mx-auto mt-4">
             <SheetClose asChild>
               <SignedOut>
-                <SignInButton>
+                <Link to="signin">
                   <Button className=" mx-auto py-8 px-8 rounded-full font-semibold font-mona text-lg">
                     Sign In
                   </Button>
-                </SignInButton>
+                </Link>
               </SignedOut>
             </SheetClose>
             <SignedIn>
