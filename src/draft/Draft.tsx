@@ -1,18 +1,13 @@
-import KeyboardNavigation from "@/Hooks/KeyboardShortcuts";
-import ToolList from "@/Layout/ToolList";
-import Header from "@/components/Header/Header";
 import { Card } from "@/components/ui/card";
+import DraftNecessary from "./Draft-0";
+import MessengerChat from "./01MessengerMessege";
 
 function Draft() {
   return (
     <>
-      <Header />
-      <KeyboardNavigation />
-      <ToolList />
-      <Card className="w-screen h-screen absolute flex flex-col place-items-center justify-center bg-yellow-50">
-        <a href="http://m.me/61557379647439?text=Hello%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome">
-          Chat with Messenger
-        </a>
+      <DraftNecessary />
+      <Card className="w-screen h-screen absolute flex flex-col place-items-center justify-center bg-slate-200">
+        <MessengerChat />
       </Card>
     </>
   );
