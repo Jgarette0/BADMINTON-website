@@ -14,11 +14,7 @@ import { AlignRight } from "lucide-react";
 import { Link, NavLink } from "react-router-dom";
 import { ScrollArea } from "../ui/scroll-area";
 import DarkMode from "@/Layout/Darkmode";
-import {
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from "@clerk/clerk-react";
+import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
 // import { Card } from "./ui/card";
 
 export function SidebarRoute() {
@@ -35,8 +31,8 @@ export function SidebarRoute() {
 
   return (
     <Sheet>
-      <SheetTrigger asChild>
-        <AlignRight size={28} strokeWidth={1.25} />
+      <SheetTrigger asChild className="fixed top-6 right-4 z-50">
+        <AlignRight size={28} strokeWidth={1.25} className=" z-999" />
       </SheetTrigger>
       <SheetContent>
         <SheetHeader className="flex flex-col place-items-start gap-4 ">

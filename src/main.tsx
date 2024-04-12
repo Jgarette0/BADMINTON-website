@@ -139,7 +139,7 @@ const Render = () => {
             dividerText: "text-primary",
             dividerLine: "bg-primary",
             socialButtonsBlockButton:
-              "bg-secondary text-md font-mona py-3 transition-all duration-300 ease-in-out rounded-sm text-primary transition-all duration-300 ease-in-out hover:bg-secondary hover:text-primary font-semibold hover:scale-105",
+              "bg-secondary text-md font-mona py-4 transition-all duration-300 ease-in-out rounded-sm border-none text-primary transition-all duration-300 ease-in-out hover:bg-secondary hover:text-primary font-semibold hover:scale-105",
             socialButtonsBlockButtonArrow: "text-primary",
             footerActionText: "text-primary",
             footerActionLink:
