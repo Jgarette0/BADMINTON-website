@@ -19,7 +19,7 @@ export const TextAnimation = ({
       },
       {
         duration: 2,
-        delay: stagger(0.4),
+        delay: stagger(0.2),
       }
     );
   }, [scope.current]);

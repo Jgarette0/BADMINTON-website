@@ -6,7 +6,7 @@ export const InfiniteMovingCards = ({
   items,
   direction = "left",
   speed = "fast",
-  pauseOnHover = true,
+  pauseOnHover = false,
   className,
 }: {
   items: {
@@ -95,7 +95,7 @@ export const InfiniteMovingCards = ({
               aria-hidden="true"
               className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
             ></div>
-            <AspectRatio ratio={6 / 4} className="overflow-hidden rounded-md">
+            <AspectRatio ratio={3 / 2} className="overflow-hidden rounded-md">
               <img
                 src={item.image}
                 alt={`Image ${idx}`}

@@ -18,7 +18,7 @@ export const DescriptionTextAnimate = ({
         opacity: 1,
       },
       {
-        duration: 3,
+        duration: 2,
         delay: stagger(0.3),
       }
     );

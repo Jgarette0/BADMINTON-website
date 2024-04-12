@@ -36,7 +36,7 @@ const Render = () => {
     // Simulate content loading
     setTimeout(() => {
       setLoading(false);
-    }, 1000); // Change 2000 to the actual time it takes to load your content
+    }, 0); // Change 2000 to the actual time it takes to load your content
   }, []);
 
   const router = createBrowserRouter([

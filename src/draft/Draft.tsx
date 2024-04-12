@@ -10,7 +10,9 @@ function Draft() {
       <KeyboardNavigation />
       <ToolList />
       <Card className="w-screen h-screen absolute flex flex-col place-items-center justify-center bg-yellow-50">
-        <div>Hello world</div>
+        <a href="fb-messenger://user-thread/Psbt9v31h3h4m8">
+          Chat with Messenger
+        </a>
       </Card>
     </>
   );
