@@ -21,7 +21,7 @@ import TeamPage from "./pages/Options/Team";
 import ContactPage from "./pages/Options/Contact";
 import TermsPage from "./pages/Options/Terms";
 import DocsPage from "./pages/Options/Docs";
-import { ClerkProvider } from "@clerk/clerk-react";
+import { ClerkLoaded, ClerkLoading, ClerkProvider } from "@clerk/clerk-react";
 import SignInPage from "./pages/Signin";
 import SignUpPage from "./pages/Signup";
 import LoadingSpinner from "./Layout/LoadingSpinner";
@@ -144,14 +144,25 @@ const Render = () => {
             footerActionText: "text-primary",
             footerActionLink:
               "text-gold hover:text-gold hover:scale-105 transition all duration-300 ease-in-out",
+            socialButtonsIconButton:
+              "bg-gray-50 text-md font-mona py-4 transition-all duration-300 ease-in-out rounded-sm border-none text-primary transition-all duration-300 ease-in-out hover:bg-secondary hover:text-primary font-semibold hover:scale-105",
           },
         }}
       >
-        <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-          <div className="flex flex-col place-items-center w-screen md:w-full border border-red px-4 max-1k  overflow-hidden box-border border-none">
-            {loading ? <LoadingSpinner /> : <RouterProvider router={router} />}
-          </div>
-        </ThemeProvider>
+        <ClerkLoading>
+          <LoadingSpinner />
+        </ClerkLoading>
+        <ClerkLoaded>
+          <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+            <div className="flex flex-col place-items-center w-screen md:w-full border border-red px-4 max-1k  overflow-hidden box-border border-none">
+              {loading ? (
+                <LoadingSpinner />
+              ) : (
+                <RouterProvider router={router} />
+              )}
+            </div>
+          </ThemeProvider>
+        </ClerkLoaded>
       </ClerkProvider>
     </React.StrictMode>
   );

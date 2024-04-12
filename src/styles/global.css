@@ -97,3 +97,9 @@ body {
 .cl-card {
   background-color: hsl(var(--background));
 }
+
+/* Wave underline effect on selected text */
+::selection {
+  text-decoration: line-through;
+  color: #d4b34c;
+}
