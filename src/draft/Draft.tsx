@@ -10,7 +10,7 @@ function Draft() {
       <KeyboardNavigation />
       <ToolList />
       <Card className="w-screen h-screen absolute flex flex-col place-items-center justify-center bg-yellow-50">
-        <a href="http://m.me/61557379647439?text=Hello%20and%20Welcome">
+        <a href="http://m.me/61557379647439?text=Hello%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome%20and%20Welcome">
           Chat with Messenger
         </a>
       </Card>
