@@ -121,6 +121,10 @@ const App = () => {
       path: "/test",
       element: <Draft />,
     },
+    {
+      path: "/(.*)",
+      element: <NotFound />,
+    },
   ]);
   return (
     <React.StrictMode>
