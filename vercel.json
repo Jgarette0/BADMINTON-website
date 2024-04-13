@@ -18,7 +18,6 @@
     { "src": "/somethings", "dest": "/" },
     { "src": "/somethings/:item", "dest": "/" },
     { "src": "/somethings/Layout Grid", "dest": "/" },
-    { "src": "/test", "dest": "/" },
-    { "src": "/(.*)", "dest": "/" }
+    { "src": "/test", "dest": "/" }
   ]
 }
