@@ -111,19 +111,11 @@ const App = () => {
           path: "/somethings/:item",
           element: <SomethingPage />,
         },
-        {
-          path: "/somethings/Layout Grid",
-          element: <NotFound />,
-        },
       ],
     },
     {
       path: "/test",
       element: <Draft />,
-    },
-    {
-      path: "/(.*)",
-      element: <NotFound />,
     },
   ]);
   return (
