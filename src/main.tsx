@@ -29,7 +29,7 @@ const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 if (!PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key");
 }
-const Render = () => {
+const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -43,6 +43,7 @@ const Render = () => {
     {
       path: "/",
       element: <GlobalPage />,
+      errorElement: <NotFound />,
       children: [
         {
           path: "/Program",
@@ -171,4 +172,4 @@ const Render = () => {
   );
 };
 
-ReactDOM.createRoot(document.getElementById("root")!).render(<Render />);
+ReactDOM.createRoot(document.getElementById("root")!).render(<App />);
