@@ -43,7 +43,6 @@ const Render = () => {
     {
       path: "/",
       element: <GlobalPage />,
-      errorElement: <NotFound />,
       children: [
         {
           path: "/Program",
@@ -120,6 +119,10 @@ const Render = () => {
     {
       path: "/test",
       element: <Draft />,
+    },
+    {
+      path: "*",
+      element: <NotFound />,
     },
   ]);
   return (
