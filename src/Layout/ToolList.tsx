@@ -126,7 +126,7 @@ export function ToolList() {
               </DropdownMenuSubContent>
             </DropdownMenuPortal>
           </DropdownMenuSub>
-          <Link to="/">
+          <Link to="/location">
             <DropdownMenuItem>
               <MapPin className="mr-2 h-4 w-4" />
               <span>Location</span>
