@@ -16,22 +16,19 @@ export function InfiniteMovingCardsDemo() {
 
 const testimonials = [
   {
-    image: "./img/01.jpg",
+    image: "./img/img1.jpg",
   },
   {
-    image: "./img/09.jpg",
+    image: "./img/img2.jpg",
   },
   {
-    image: "./img/08.jpg",
+    image: "./img/img3.jpg",
   },
   {
-    image: "./img/07.jpg",
+    image: "./img/img4.jpg",
   },
   {
-    image: "./img/03.jpg",
-  },
-  {
-    image: "./img/10.jpg",
+    image: "./img/img5.jpg",
   },
 ];
 
