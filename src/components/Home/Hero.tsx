@@ -35,8 +35,9 @@ function Hero() {
                         Basic Badminton Techniques
                       </h2>
                       <p className="leading-relaxed text-base">
-                        Fundamental skills such as grip, footwork, and strokes
-                        to provide a strong foundation for players.
+                        Fundamental skills such as grip, footwork, serving, drop
+                        shots, and strokes provide a strong foundation for
+                        players.
                       </p>
                     </Card>
                   </CardItem>

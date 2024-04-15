@@ -103,3 +103,9 @@ body {
   text-decoration: line-through;
   color: #d4b34c;
 }
+.homeSvg {
+  border-radius: 68% 32% 48% 52% / 59% 31% 69% 41%;
+}
+.homeSvg:hover {
+  border-radius: 32% 68% 48% 52% / 42% 68% 32% 58%;
+}

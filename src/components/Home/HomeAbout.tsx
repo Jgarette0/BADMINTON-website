@@ -41,7 +41,7 @@ function AboutSection() {
           </div>
           <div className="lg:max-w-xl lg:w-full lg:max-h-xl w-5/6  flex-row hidden md:flex place-items-center justify-end rounded-full">
             <img
-              className="object-cover object-center  select-none"
+              className="homeSvg object-cover object-center  select-none  hover:opacity-100 hover:scale-95 p-8 pl-20 pr-12 bg-gold opacity-85 transition-all duration-300 ease-in-out box-border hover:bg-secondary-foreground"
               alt="hero"
               src="img/badminton.png"
             />
