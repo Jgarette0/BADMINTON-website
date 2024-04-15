@@ -18,7 +18,7 @@ export function HomeTitle() {
       <div className="h-32 md:h-40 flex flex-col place-items-center justify-center w-full">
         <SignedOut>
           <Link to="/signin">
-            <Button className=" rounded-full px-8 py-8  text-lg md:text-xl tracking-tighter font-semibold font-mona transition-opacity duration-300 ease-in-out opacity-100 hover:opacity-80">
+            <Button className=" rounded-full px-8 py-6 md:py-8 md:px-8 text-md md:text-xl tracking-tighter font-semibold font-mona transition-opacity duration-300 ease-in-out opacity-100 hover:opacity-80">
               Get started
             </Button>
           </Link>

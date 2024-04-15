@@ -100,6 +100,7 @@ export const InfiniteMovingCards = ({
                 src={item.image}
                 alt={`Image ${idx}`}
                 className="rounded-md object-cover"
+                loading="lazy"
               />
             </AspectRatio>
           </li>

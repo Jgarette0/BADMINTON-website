@@ -9,6 +9,7 @@ function AboutSection() {
  knowledge, and local expertise, our coaches, led by Coach Andrew, aim to provide tailor-made individual and group training
  programs that cater to the needs of young athletes, taking their
  game to the next level.`;
+
   return (
     <>
       <section className=" body-font md:w-1k">
@@ -29,7 +30,7 @@ function AboutSection() {
               <SignedIn>
                 <Link to="/about">
                   <Button
-                    className="font-mona transition-all duration-400 ease-in-out text-md py-8 px-8 font-semibold md:py-8 hover:bg-primary hover:text-secondary md:px-12 md:text-lg "
+                    className="font-mona transition-all duration-400 ease-in-out text-sm py-4 px-8 font-semibold md:py-8 hover:bg-primary hover:text-secondary md:px-12 md:text-lg "
                     variant="secondary"
                   >
                     Explore

@@ -13,8 +13,8 @@ function Hero() {
   return (
     <>
       <section className=" body-font">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+        <div className="container px-5 py-16 md:py-24 mx-auto">
+          <div className="flex flex-wrap w-full mb-8 md:mb-20 flex-col items-center text-center">
             <h1 className="font-medium title-font mb-2 font-dahlia text-6xl ">
               OUR FOCUS AREAS
             </h1>
