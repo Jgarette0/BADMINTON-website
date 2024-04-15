@@ -1,6 +1,6 @@
 import LoadingSpinner from "@/Layout/LoadingSpinner";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
-import { Suspense, lazy } from "react";
+import { Suspense } from "react";
 
 export function InfiniteMovingCardsDemo() {
   const testimonials = [
