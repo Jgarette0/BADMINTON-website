@@ -1,7 +1,9 @@
 import Hero from "@/components/Home/Hero";
 import AboutSection from "@/components/Home/HomeAbout";
+import HomeProgram from "@/components/Home/HomeProgram";
 import HomeTitle from "@/components/Home/Hometitle";
 import InfiniteMovingCardsDemo from "@/components/Home/ImageInfinite";
+import LocationHome from "@/components/Home/LocationHome";
 
 import Spotlight from "@/components/ui/spotlight";
 
@@ -15,6 +17,8 @@ export const HomePage = () => {
       <InfiniteMovingCardsDemo />
       <AboutSection />
       <Hero />
+      <HomeProgram />
+      <LocationHome />
     </>
   );
 };

@@ -109,3 +109,7 @@ body {
 .homeSvg:hover {
   border-radius: 32% 68% 48% 52% / 42% 68% 32% 58%;
 }
+
+.map {
+  filter: grayscale(1) contrast(1.2) opacity(0.8);
+}

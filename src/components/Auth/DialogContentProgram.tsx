@@ -9,7 +9,7 @@ import {
   DialogTitle,
 } from "../ui/dialog";
 
-function DialogContents() {
+function DialogContentsProgram() {
   return (
     <DialogContent className="sm:max-w-md">
       <DialogHeader>
@@ -19,7 +19,7 @@ function DialogContents() {
         </DialogDescription>
       </DialogHeader>
       <div className="flex items-center space-x-2">
-        <SignInButton afterSignInUrl="/about">
+        <SignInButton afterSignInUrl="/program">
           <Button
             type="submit"
             size="sm"
@@ -39,4 +39,4 @@ function DialogContents() {
     </DialogContent>
   );
 }
-export default DialogContents;
+export default DialogContentsProgram;
