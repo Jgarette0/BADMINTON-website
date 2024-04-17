@@ -6,6 +6,7 @@ import KeyboardNavigation from "@/Hooks/KeyboardShortcuts";
 import ToolList from "@/Layout/ToolList";
 import { Suspense } from "react";
 import LoadingSpinner from "@/Layout/LoadingSpinner";
+import Footer from "@/components/Footer/Footer";
 
 const GlobalPage = () => {
   const location = useLocation();
@@ -19,6 +20,7 @@ const GlobalPage = () => {
         <Outlet />
       </Suspense>
       <ToolList />
+      <Footer />
     </>
   );
 };

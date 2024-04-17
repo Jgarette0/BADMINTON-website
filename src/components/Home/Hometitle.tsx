@@ -1,28 +1,28 @@
-import { Link } from "react-router-dom";
-import { Button } from "../ui/button";
-import TextAnimation from "../ui/text-animation";
-import { TextGenerateEffect } from "../ui/text-generate-effect";
-import { SignedOut } from "@clerk/clerk-react";
+import { Suspense, lazy } from "react";
+import LoadingSpinner from "@/Layout/LoadingSpinner";
 
+const TextGenerateEffect = lazy(() => import("../ui/text-generate-effect"));
+const TextAnimation = lazy(() => import("../ui/text-animation"));
+const SignedoutBtn = lazy(() => import("./SignedoutBtn"));
 const words = `AB BADMINTON TRAINING CAMP`;
 const description = ` Discover the passion and skill that drive our players.`;
 export function HomeTitle() {
   return (
     <>
       <div className=" text-3xl md:w-1k md:h-auto flex flex-col text-left place-items-center h-auto justify-center opacity-80 hover:opacity-100 select-none md:text-center md:pb-0 ">
-        <TextGenerateEffect words={words} />
+        <Suspense fallback={<LoadingSpinner />}>
+          <TextGenerateEffect words={words} />
+        </Suspense>
       </div>
       <div className="md:h-16 flex flex-col place-items-center justify-center w-full text-xl md:text-3xl z-20 text-center  px-8  h-20">
-        <TextAnimation words={description} />
+        <Suspense fallback={<LoadingSpinner />}>
+          <TextAnimation words={description} />
+        </Suspense>
       </div>
       <div className="h-32 md:h-40 flex flex-col place-items-center justify-center w-full">
-        <SignedOut>
-          <Link to="/signin">
-            <Button className=" rounded-full px-8 py-6 md:py-8 md:px-8 text-md md:text-xl tracking-tighter font-semibold font-mona transition-opacity duration-300 ease-in-out opacity-100 hover:opacity-80">
-              Get started
-            </Button>
-          </Link>
-        </SignedOut>
+        <Suspense fallback={<div>Loading...</div>}>
+          <SignedoutBtn />
+        </Suspense>
       </div>
     </>
   );

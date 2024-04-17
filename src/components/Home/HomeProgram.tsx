@@ -4,7 +4,6 @@ import { Button } from "../ui/button";
 import PricingDialog from "../Auth/PricingDialog";
 import PriceCard from "./PricingCard";
 import PriceCardblur from "./PriceCardBlur";
-import SignInModalProgram from "../Auth/SigninModalProgram";
 
 function HomeProgram() {
   return (
@@ -18,19 +17,14 @@ function HomeProgram() {
         </p>
 
         <div className="flex justify-center py-8 md:py-12">
-          <SignedOut>
-            <SignInModalProgram />
-          </SignedOut>
-          <SignedIn>
-            <Link to="/program">
-              <Button
-                className="font-mona transition-all duration-400 ease-in-out text-sm py-4 px-8 font-semibold md:py-8 hover:bg-primary hover:text-secondary md:px-12 md:text-lg "
-                variant="secondary"
-              >
-                Explore
-              </Button>
-            </Link>
-          </SignedIn>
+          <Link to="/program">
+            <Button
+              className="font-mona transition-all duration-400 ease-in-out text-sm py-4 px-8 font-semibold md:py-8 hover:bg-primary hover:text-secondary md:px-12 md:text-lg "
+              variant="secondary"
+            >
+              Explore
+            </Button>
+          </Link>
         </div>
         <div className=" flex-col place-items-center relative hidden md:flex">
           <SignedOut>

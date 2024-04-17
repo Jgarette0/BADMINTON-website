@@ -3,7 +3,7 @@ import { CircleCheck } from "lucide-react";
 function PriceCard() {
   return (
     <>
-      <div className=" mx-auto w-1k place-items-center grid grid-cols-1 gap-4 items-center  md:grid-cols-2 xl:grid-cols-3">
+      <div className=" mx-auto w-1k place-items-center grid grid-cols-1 gap-4 items-center  md:grid-cols-3">
         <div className="dark:bg-black dark:border-white/[0.2] bg-white/60  rounded-3xl px-6 py-8 ring-1 ring-gray-900/10 sm:mx-8 lg:mx-0 border border-transparent h-full flex flex-col justify-between">
           <div className="">
             <h3

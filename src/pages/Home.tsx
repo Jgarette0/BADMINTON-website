@@ -1,24 +1,34 @@
-import Hero from "@/components/Home/Hero";
-import AboutSection from "@/components/Home/HomeAbout";
-import HomeProgram from "@/components/Home/HomeProgram";
-import HomeTitle from "@/components/Home/Hometitle";
-import InfiniteMovingCardsDemo from "@/components/Home/ImageInfinite";
-import LocationHome from "@/components/Home/LocationHome";
-
+import { lazy, Suspense } from "react";
 import Spotlight from "@/components/ui/spotlight";
+import LoadingSpinner from "@/Layout/LoadingSpinner";
+import LayoutGridDemo from "@/components/Home/ImageLayout";
+import Qoute from "@/components/Home/Qoute";
 
-export const HomePage = () => {
+const HomeTitle = lazy(() => import("@/components/Home/Hometitle"));
+const AboutSection = lazy(() => import("@/components/Home/HomeAbout"));
+const HomeProgram = lazy(() => import("@/components/Home/HomeProgram"));
+const InfiniteMovingCardsDemo = lazy(
+  () => import("@/components/Home/ImageInfinite")
+);
+const LocationHome = lazy(() => import("@/components/Home/LocationHome"));
+const Hero = lazy(() => import("@/components/Home/Hero"));
+
+const HomePage = () => {
   return (
     <>
       <div className="md:w-1k px-4 flex flex-col place-items-center border-none">
         <Spotlight />
         <HomeTitle />
       </div>
-      <InfiniteMovingCardsDemo />
-      <AboutSection />
-      <Hero />
-      <HomeProgram />
-      <LocationHome />
+      <Suspense fallback={<LoadingSpinner />}>
+        <InfiniteMovingCardsDemo />
+        <AboutSection />
+        <Hero />
+        <LayoutGridDemo />
+        <HomeProgram />
+        <Qoute />
+        <LocationHome />
+      </Suspense>
     </>
   );
 };
