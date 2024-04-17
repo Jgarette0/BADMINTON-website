@@ -13,7 +13,7 @@ function Footer() {
           <div className=" w-1/2 flex flex-col place-items-center gap-4 md:gap-6  ">
             <div className="flex flex-col place-items-start gap-4 md:gap-6">
               <div className=" font mona font-bold text-xl md:text-2xl py-8 tracking-wider cursor-default select-none mt-12 md:mt-20">
-                Settings & Option
+                Options
               </div>
               <Link to="/">
                 <div className=" tracking-wide text-md md:text-lg hover:opacity-60 text-secondary-foreground font-semibold opacity-80">
