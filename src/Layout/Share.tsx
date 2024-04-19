@@ -18,7 +18,7 @@ import { useState } from "react";
 
 export function ShareLink() {
   const [dateTime, setDateTime] = useState("");
-  const [setCopied] = useState(false);
+  const [copied, setCopied] = useState(false);
   const handleClick = () => {
     const now = new Date();
     const formattedDateTime = `${now.toLocaleTimeString([], {
@@ -40,6 +40,7 @@ export function ShareLink() {
     document.execCommand("copy");
     setCopied(true);
     setTimeout(() => setCopied(false), 0);
+    console.log(copied);
   };
   return (
     <Dialog>
