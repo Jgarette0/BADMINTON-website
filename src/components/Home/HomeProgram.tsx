@@ -26,7 +26,7 @@ function HomeProgram() {
             </Button>
           </Link>
         </div>
-        <div className=" flex-col place-items-center relative hidden md:flex">
+        <div className=" flex-col place-items-center relative md:flex">
           <SignedOut>
             <div className="z-100 flex flex-col place-items-center relative">
               <PriceCardblur />

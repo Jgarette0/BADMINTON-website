@@ -17,6 +17,9 @@ module.exports = {
       },
     },
     extend: {
+      scale: {
+        70: "0.7",
+      },
       fontFamily: {
         dahlia: ["Dahlia Medium"],
         mona: ["Mona Sans", "sans-serif"],
