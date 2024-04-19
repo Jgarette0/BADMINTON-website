@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { motion, sync, useCycle } from "framer-motion";
+import { motion, useCycle } from "framer-motion";
 import useDimensions from "./UseMenu";
 import MenuToggle from "./MenuToggle";
 import HomeTitle from "@/components/Home/Hometitle";
