@@ -17,6 +17,9 @@ module.exports = {
       },
     },
     extend: {
+      rotate: {
+        360: "360deg",
+      },
       scale: {
         70: "0.7",
       },

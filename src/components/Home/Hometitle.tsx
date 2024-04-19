@@ -1,5 +1,6 @@
 import { Suspense, lazy } from "react";
 import LoadingSpinner from "@/Layout/LoadingSpinner";
+import LoadingSpinnerSmall from "@/Layout/LoadingSpinnerSmall";
 
 const TextGenerateEffect = lazy(() => import("../ui/text-generate-effect"));
 const TextAnimation = lazy(() => import("../ui/text-animation"));
@@ -20,7 +21,7 @@ export function HomeTitle() {
         </Suspense>
       </div>
       <div className="h-32 md:h-40 flex flex-col place-items-center justify-center w-full">
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<LoadingSpinnerSmall />}>
           <SignedoutBtn />
         </Suspense>
       </div>

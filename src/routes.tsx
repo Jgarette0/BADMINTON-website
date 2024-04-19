@@ -10,7 +10,7 @@ const GalleryPage = lazy(() => import("./pages/Gallery"));
 const HomePage = lazy(() => import("./pages/Home"));
 const LocationPage = lazy(() => import("./pages/Options/Location"));
 const SettingsPage = lazy(() => import("./pages/Options/Settings"));
-const BillingPage = lazy(() => import("./pages/Options/Billing"));
+const PaymentPage = lazy(() => import("./pages/Options/Payment"));
 const SupportPage = lazy(() => import("./pages/Options/Support"));
 const TeamPage = lazy(() => import("./pages/Options/Team"));
 const ContactPage = lazy(() => import("./pages/Options/Contact"));
@@ -45,8 +45,8 @@ const Routers = () => {
           element: <HomePage />,
         },
         {
-          path: "/billing",
-          element: <BillingPage />,
+          path: "/payment",
+          element: <PaymentPage />,
         },
         {
           path: "/settings",

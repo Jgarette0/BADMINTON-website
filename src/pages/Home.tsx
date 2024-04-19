@@ -3,7 +3,6 @@ import Spotlight from "@/components/ui/spotlight";
 import LoadingSpinner from "@/Layout/LoadingSpinner";
 import LayoutGridDemo from "@/components/Home/ImageLayout";
 import Qoute from "@/components/Home/Qoute";
-
 const HomeTitle = lazy(() => import("@/components/Home/Hometitle"));
 const AboutSection = lazy(() => import("@/components/Home/HomeAbout"));
 const HomeProgram = lazy(() => import("@/components/Home/HomeProgram"));
@@ -12,6 +11,7 @@ const InfiniteMovingCardsDemo = lazy(
 );
 const LocationHome = lazy(() => import("@/components/Home/LocationHome"));
 const Hero = lazy(() => import("@/components/Home/Hero"));
+const Footer = lazy(() => import("@/components/Footer/Footer"));
 
 const HomePage = () => {
   return (
@@ -28,6 +28,7 @@ const HomePage = () => {
         <HomeProgram />
         <Qoute />
         <LocationHome />
+        <Footer />
       </Suspense>
     </>
   );

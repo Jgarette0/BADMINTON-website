@@ -5,7 +5,7 @@
     { "src": "/About", "dest": "/" },
     { "src": "/Gallery", "dest": "/" },
     { "src": "/Home", "dest": "/" },
-    { "src": "/billing", "dest": "/" },
+    { "src": "/payment", "dest": "/" },
     { "src": "/settings", "dest": "/" },
     { "src": "/support", "dest": "/" },
     { "src": "/team", "dest": "/" },

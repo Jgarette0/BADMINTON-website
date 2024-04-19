@@ -1,4 +1,7 @@
 import { CircleCheck } from "lucide-react";
+import OneSession from "@/Layout/OrderSession";
+import TenSession from "@/Layout/OrderSessionPack";
+import { Link } from "react-router-dom";
 
 function PriceCard() {
   return (
@@ -13,9 +16,7 @@ function PriceCard() {
               Per Session
             </h3>
             <p className="mt-4 gap-x-2">
-              <span className="dark:text-white text-gray-400 text-sm block h-6 dark:text-white">
-                {" "}
-              </span>
+              <span className="text-gray-400 text-sm block h-6 dark:text-white"></span>
               <span className="text-gray-900 text-4xl font-bold tracking-tight dark:text-white">
                 &#8369;69/Session
               </span>
@@ -54,15 +55,12 @@ function PriceCard() {
             </ul>
           </div>
           <div>
-            <button
-              aria-describedby="tier-free"
-              className="border bg-secondary hover:bg-primary-foreground mt-8 rounded-md py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10 block w-full"
-            >
-              Book Now
-            </button>
-            <button className="text-xs text-neutral-500 mt-2 text-left">
-              Questions?
-            </button>
+            <OneSession />
+            <Link to="/contact">
+              <button className="text-xs text-neutral-500 mt-2 text-left">
+                Questions?
+              </button>
+            </Link>
           </div>
         </div>
         <div className="relative bg-[radial-gradient(164.75%_100%_at_50%_0%,#334155_0%,#0F172A_48.73%)]  shadow-2xl rounded-3xl px-6 py-8 ring-1 ring-gray-900/10  lg:mx-0 border border-transparent h-full flex flex-col justify-between">
@@ -128,15 +126,12 @@ function PriceCard() {
             </ul>
           </div>
           <div>
-            <button
-              aria-describedby="tier-pages-page"
-              className="bg-yellow-500 text-secondary shadow-sm hover:bg-gold focus-visible:outline-gold mt-8 rounded-md py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10 block w-full"
-            >
-              Book Now
-            </button>
-            <button className="text-xs mt-2 text-left text-neutral-200">
-              Questions?
-            </button>
+            <TenSession />
+            <Link to="/contact">
+              <button className="text-xs mt-2 text-left text-neutral-200">
+                Questions?
+              </button>
+            </Link>
           </div>
         </div>
       </div>

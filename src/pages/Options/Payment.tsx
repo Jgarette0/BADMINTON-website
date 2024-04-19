@@ -1,6 +1,6 @@
 import { UserProfile } from "@clerk/clerk-react";
 
-function BillingPage() {
+function PaymentPage() {
   return <UserProfile path="/billing" routing="path" />;
 }
-export default BillingPage;
+export default PaymentPage;
