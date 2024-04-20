@@ -1,11 +1,11 @@
 import DraftNecessary from "./Draft-0";
-import Example from "./04Framer";
+import AboutUs from "@/components/About/AboutAB";
 
 function Draft() {
   return (
     <>
       <DraftNecessary />
-      <Example />
+      <AboutUs />
     </>
   );
 }

@@ -25,6 +25,16 @@ const clerkElements = {
       "text-gold hover:text-gold hover:scale-105 transition all duration-300 ease-in-out",
     socialButtonsIconButton:
       "bg-gray-50 text-md font-mona py-4 transition-all duration-300 ease-in-out rounded-sm border-none text-primary transition-all duration-300 ease-in-out hover:bg-secondary hover:text-primary font-semibold hover:scale-105",
+    userButtonPopoverMain: " text-primary",
+    userButtonPopoverCard:
+      "text-primary border transition-all duration-300 ease-in-out border-white hover:border-none  ",
+    userButtonPopoverFooter: "text-primary",
+    userButtonPopoverActionButton:
+      "rounded-sm bg-secondary mx-4 my-1 hover:bg-primary-foreground",
+    userButtonPopoverActions: "mt-4",
+    userButtonPopoverActionButton__manageAccount: "opacity-60",
+    userButtonPopoverActionButtonText: "text-primary text-xl ",
+    userButtonPopoverActionButtonIcon: "text-primary h-4 w-4",
   },
 };
 

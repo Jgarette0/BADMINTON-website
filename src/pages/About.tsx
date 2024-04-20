@@ -1,12 +1,17 @@
-import { Card } from "@/components/ui/card";
+import AboutUs from "@/components/About/AboutAB";
+import Footer from "@/components/Footer/Footer";
+import Hero from "@/components/Home/Hero";
 import Spotlight from "@/components/ui/spotlight";
 
 export const AboutPage = () => {
   return (
     <>
-      <Card className="flex flex-col gap-10 w-full border-none ">
-        <Spotlight className="" fill="white" />
-      </Card>
+      <Spotlight className="" fill="white" />
+      <AboutUs />
+      <div className="md:hidden">
+        <Hero />
+      </div>
+      <Footer />
     </>
   );
 };
