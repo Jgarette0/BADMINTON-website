@@ -1,13 +1,24 @@
+import PricingDialog from "@/components/Auth/PricingDialog";
+import PriceCardblur from "@/components/Home/PriceCardBlur";
+import PriceCard from "@/draft/03card";
+import { SignedIn, SignedOut } from "@clerk/clerk-react";
+
 export const ProgramPage = () => {
   return (
     <>
-      {" "}
-      <h1 className="text-9xl">
-        eius delectus dolorem! Iste, ex? Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Natus aliquam iste, necessitatibus cupiditate dolor
-        illum tempora magni? Itaque repudiandae molestiae quasi quae non!
-        Perferendis expedita
-      </h1>
+      <div className=" flex-col place-items-center relative md:flex">
+        <SignedOut>
+          <div className="z-100 flex flex-col place-items-center relative">
+            <PriceCardblur />
+            <div className="flex flex-col top-1/3 mx-auto absolute">
+              <PricingDialog />
+            </div>
+          </div>
+        </SignedOut>
+        <SignedIn>
+          <PriceCard />
+        </SignedIn>
+      </div>
     </>
   );
 };
