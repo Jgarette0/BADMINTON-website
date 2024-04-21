@@ -1,14 +1,7 @@
 import { NavLink, Outlet } from "react-router-dom";
 
 export const SomethingsPage = () => {
-  const somethings = [
-    "Button",
-    "Card",
-    "Dialog",
-    "Layout Grid",
-    "Spotlight",
-    "Text Generate Effect",
-  ];
+  const somethings = [1, 2, 3, 4, 5, 6, 7];
 
   return (
     <>

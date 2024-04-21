@@ -1,9 +1,13 @@
-import Hero from "@/components/Home/Hero";
+import Footer from "@/components/Footer/Footer";
+import GalleryHeader from "@/components/Gallery/GalleryHeader";
+import GalleryImages from "@/components/Gallery/GalleryImg";
 
 export const GalleryPage = () => {
   return (
     <>
-      <Hero />
+      <GalleryHeader />
+      <GalleryImages />
+      <Footer />
     </>
   );
 };
