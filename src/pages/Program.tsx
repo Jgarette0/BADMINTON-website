@@ -1,4 +1,3 @@
-import LoadingSpinner from "@/Layout/LoadingSpinner";
 import LoadingSpinnerSmall from "@/Layout/LoadingSpinnerSmall";
 import PricingDialog from "@/components/Auth/PricingDialog";
 import Footer from "@/components/Footer/Footer";

@@ -1,5 +1,5 @@
 import { cn } from "@/utils/cn";
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { createNoise3D } from "simplex-noise";
 import { motion } from "framer-motion";
 
@@ -53,7 +53,8 @@ export const Vortex = (props: VortexProps) => {
   };
   const lerp = (n1: number, n2: number, speed: number): number =>
     (1 - speed) * n1 + speed * n2;
-
+  console.log(HALF_PI);
+  console.log(TO_RAD);
   const setup = () => {
     const canvas = canvasRef.current;
     const container = containerRef.current;
@@ -190,14 +191,14 @@ export const Vortex = (props: VortexProps) => {
     ctx?: CanvasRenderingContext2D
   ) => {
     const { innerWidth, innerHeight } = window;
-
+    if (ctx) {
+    }
     canvas.width = innerWidth;
     canvas.height = innerHeight;
 
     center[0] = 0.5 * canvas.width;
     center[1] = 0.5 * canvas.height;
   };
-
   const renderGlow = (
     canvas: HTMLCanvasElement,
     ctx: CanvasRenderingContext2D
