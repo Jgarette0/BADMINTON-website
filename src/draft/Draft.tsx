@@ -1,11 +1,11 @@
-import LoadingSpinner from "@/Layout/LoadingSpinner";
+import AccordionDemo from "./Accordiyown";
 import DraftNecessary from "./Draft-0";
 
 function Draft() {
   return (
     <>
       <DraftNecessary />
-      <LoadingSpinner />
+      <AccordionDemo />
     </>
   );
 }

@@ -19,7 +19,7 @@ const SignInPage = lazy(() => import("./pages/Signin"));
 const SignUpPage = lazy(() => import("./pages/Signup"));
 const Draft = lazy(() => import("./draft/Draft"));
 const AboutPage = lazy(() => import("./pages/About"));
-
+const FaqsPage = lazy(() => import("./pages/Options/Faqs"));
 const Routers = () => {
   const router = createBrowserRouter([
     {
@@ -54,6 +54,10 @@ const Routers = () => {
         {
           path: "/support",
           element: <SupportPage />,
+        },
+        {
+          path: "/faq",
+          element: <FaqsPage />,
         },
         {
           path: "/team",
