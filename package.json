@@ -25,6 +25,7 @@
     "class-variance-authority": "^0.7.0",
     "clerk": "^0.8.3",
     "clsx": "^2.1.0",
+    "embla-carousel-react": "^8.0.2",
     "framer-motion": "^11.1.7",
     "lucide-react": "^0.363.0",
     "mini-svg-data-uri": "^1.4.4",
