@@ -1,6 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { lazy } from "react";
-
+const PaymentPage = lazy(() => import("./pages/Options/Payment"));
 const GlobalPage = lazy(() => import("./pages/Global"));
 const SomethingsPage = lazy(() => import("./pages/Somethings"));
 const NotFound = lazy(() => import("./pages/404"));
@@ -10,7 +10,6 @@ const GalleryPage = lazy(() => import("./pages/Gallery"));
 const HomePage = lazy(() => import("./pages/Home"));
 const LocationPage = lazy(() => import("./pages/Options/Location"));
 const SettingsPage = lazy(() => import("./pages/Options/Settings"));
-const PaymentPage = lazy(() => import("./pages/Options/Payment"));
 const SupportPage = lazy(() => import("./pages/Options/Support"));
 const TeamPage = lazy(() => import("./pages/Options/Team"));
 const ContactPage = lazy(() => import("./pages/Options/Contact"));

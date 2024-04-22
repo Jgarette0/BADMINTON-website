@@ -8,7 +8,9 @@ function NotFound() {
       <Header />
       <KeyboardNavigation />
       <ToolList />
-      <div>404 Not Found!</div>
+      <div className="absolute top-72 md:-top-12 md:scale-50">
+        <img src="img/7.png" alt="" />
+      </div>
     </>
   );
 }

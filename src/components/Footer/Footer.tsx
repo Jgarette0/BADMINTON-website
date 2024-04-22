@@ -104,11 +104,7 @@ function Footer() {
                   FAQs
                 </div>
               </Link>
-              <Link to="/blog">
-                <div className=" tracking-wide text-md md:text-lg hover:opacity-60 text-secondary-foreground font-semibold opacity-80">
-                  Blog
-                </div>
-              </Link>
+
               <ShareLink />
               <a href="https://dev.pinamungajan.com">
                 <div className="group/item  tracking-wide text-md md:text-lg hover:opacity-60 text-secondary-foreground font-semibold opacity-80 flex flex-row gap-1 relative pr-7">

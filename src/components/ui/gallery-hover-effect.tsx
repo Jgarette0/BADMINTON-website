@@ -52,7 +52,7 @@ export const HoverEffect = ({
             <CardTitle>
               <img
                 src={item.img}
-                className="rounded-sm transition-transform duration-300 ease-in-out hover:scale-110"
+                className="rounded-sm transition-transform duration-300 ease-in-out "
                 alt={item.img}
               />
             </CardTitle>

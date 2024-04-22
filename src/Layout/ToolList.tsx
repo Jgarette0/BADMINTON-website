@@ -67,10 +67,10 @@ export function ToolList() {
               <DropdownMenuShortcut>⇧X</DropdownMenuShortcut>
             </DropdownMenuItem>
           </a>
-          <Link to="/billing">
+          <Link to="/payment">
             <DropdownMenuItem>
               <CreditCard className="mr-2 h-4 w-4" />
-              <span>Billing</span>
+              <span>Payment</span>
               <DropdownMenuShortcut>⇧B</DropdownMenuShortcut>
             </DropdownMenuItem>
           </Link>

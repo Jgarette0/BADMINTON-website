@@ -1,11 +1,11 @@
+import LoadingSpinner from "@/Layout/LoadingSpinner";
 import DraftNecessary from "./Draft-0";
-import AboutUs from "@/components/About/AboutAB";
 
 function Draft() {
   return (
     <>
       <DraftNecessary />
-      <AboutUs />
+      <LoadingSpinner />
     </>
   );
 }

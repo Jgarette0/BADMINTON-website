@@ -74,6 +74,11 @@ module.exports = {
       },
       width: {
         "1k": "1024px",
+        "7h": "750px",
+      },
+      height: {
+        "1k": "1024px",
+        "7h": "750px",
       },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
