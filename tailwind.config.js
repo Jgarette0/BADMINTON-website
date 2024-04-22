@@ -29,6 +29,7 @@ module.exports = {
       },
       fontSize: {
         "10xl": "9rem",
+        "11xl": "10rem",
       },
       blur: { xs: "1px" },
       colors: {
