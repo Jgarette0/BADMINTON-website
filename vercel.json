@@ -10,6 +10,8 @@
     { "src": "/support", "dest": "/" },
     { "src": "/team", "dest": "/" },
     { "src": "/contact", "dest": "/" },
+    { "src": "/shop", "dest": "/" },
+    { "src": "/faq", "dest": "/" },
     { "src": "/location", "dest": "/" },
     { "src": "/terms", "dest": "/" },
     { "src": "/docs", "dest": "/" },

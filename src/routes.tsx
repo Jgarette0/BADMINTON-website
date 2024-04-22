@@ -1,5 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { lazy } from "react";
+
 const PaymentPage = lazy(() => import("./pages/Options/Payment"));
 const GlobalPage = lazy(() => import("./pages/Global"));
 const SomethingsPage = lazy(() => import("./pages/Somethings"));
@@ -20,6 +21,7 @@ const SignUpPage = lazy(() => import("./pages/Signup"));
 const Draft = lazy(() => import("./draft/Draft"));
 const AboutPage = lazy(() => import("./pages/About"));
 const FaqsPage = lazy(() => import("./pages/Options/Faqs"));
+const ShopPage = lazy(() => import("./pages/Options/Shop"));
 const Routers = () => {
   const router = createBrowserRouter([
     {
@@ -54,6 +56,10 @@ const Routers = () => {
         {
           path: "/support",
           element: <SupportPage />,
+        },
+        {
+          path: "/shop",
+          element: <ShopPage />,
         },
         {
           path: "/faq",

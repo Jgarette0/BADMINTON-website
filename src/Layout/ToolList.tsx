@@ -104,13 +104,13 @@ export function ToolList() {
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent>
-                <Link to="/email">
+                <Link to="/contact">
                   <DropdownMenuItem>
                     <Mail className="mr-2 h-4 w-4" />
                     <span>Email</span>
                   </DropdownMenuItem>
                 </Link>
-                <Link to="/messege">
+                <Link to="/contact">
                   <DropdownMenuItem>
                     <MessageSquare className="mr-2 h-4 w-4" />
                     <span>Message</span>
