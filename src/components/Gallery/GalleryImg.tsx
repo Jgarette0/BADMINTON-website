@@ -60,13 +60,5 @@ export const images = [
     img: "img/t1.jpg",
     link: "",
   },
-  {
-    img: "img/t3.jpg",
-    link: "",
-  },
-  {
-    img: "img/t4.jpg",
-    link: "",
-  },
 ];
 export default GalleryImages;
