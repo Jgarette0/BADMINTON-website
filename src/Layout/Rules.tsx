@@ -1,11 +1,11 @@
 function RulesTerms() {
   return (
-    <div className="flex flex-col place-items-center w-1k h- mt-20">
-      <div className="text- flex flex-col justify-start place-items-start w-full py-12">
+    <div className="flex flex-col place-items-center w-full px-4 md:px-0 md:w-1k  md:mt-20">
+      <div className="text- flex flex-col justify-start place-items-start w-full py-8 md:py-12">
         <div className="font-semibold px-4 text-3xl md:text-5xl w-full text-left font-dahlia">
           Rules and Regulations
         </div>
-        <div className="text-2xl py-20 leading-relaxed tracking-wider text-justify">
+        <div className="text-lg md:text-2xl py-20 leading-relaxed tracking-wider text-justify">
           By joining or renewing your program at the AB Badminton, you are
           accepting all the terms in this agreement.
           <br />

@@ -35,6 +35,8 @@ const clerkElements = {
     userButtonPopoverActionButton__manageAccount: "opacity-60",
     userButtonPopoverActionButtonText: "text-primary text-xl ",
     userButtonPopoverActionButtonIcon: "text-primary h-4 w-4",
+    pageScrollBox: "bg-white",
+    navbar: "bg-white rounded-lg ",
   },
 };
 

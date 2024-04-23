@@ -6,19 +6,15 @@ import PriceCard from "@/components/Home/PricingCard";
 import ProgramHeader from "@/components/Program/ProgramHeader";
 import ProgramHero from "@/components/Program/ProgramHero";
 import { SignedIn, SignedOut } from "@clerk/clerk-react";
-import { Suspense, lazy } from "react";
-const Vortex = lazy(() => import("@/components/ui/vortex"));
+import { Suspense } from "react";
+
 export const ProgramPage = () => {
   return (
     <>
       <ProgramHeader />
       <Suspense fallback={<LoadingSpinnerSmall />}>
-        <Vortex
-          backgroundColor="transparent"
-          className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
-        >
-          <ProgramHero />
-        </Vortex>
+        <ProgramHero />
+
         <div className=" flex-col place-items-center relative md:flex">
           <SignedOut>
             <div className="z-100 flex flex-col place-items-center relative">

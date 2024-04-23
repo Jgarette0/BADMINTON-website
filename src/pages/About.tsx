@@ -1,17 +1,21 @@
-import AboutUs from "@/components/About/AboutAB";
-import Footer from "@/components/Footer/Footer";
-import Hero from "@/components/Home/Hero";
-import Spotlight from "@/components/ui/spotlight";
+const AboutUs = lazy(() => import("@/components/About/AboutAB"));
+const Footer = lazy(() => import("@/components/Footer/Footer"));
+const Hero = lazy(() => import("@/components/Home/Hero"));
+const Spotlight = lazy(() => import("@/components/ui/spotlight"));
+import LoadingSpinnerSmall from "@/Layout/LoadingSpinnerSmall";
+import { Suspense, lazy } from "react";
 
 export const AboutPage = () => {
   return (
     <>
-      <Spotlight className="" fill="white" />
-      <AboutUs />
-      <div className="md:hidden">
-        <Hero />
-      </div>
-      <Footer />
+      <Suspense fallback={<LoadingSpinnerSmall />}>
+        <Spotlight className="" fill="white" />
+        <AboutUs />
+        <div className="md:hidden">
+          <Hero />
+        </div>
+        <Footer />
+      </Suspense>
     </>
   );
 };

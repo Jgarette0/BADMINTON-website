@@ -1,6 +1,10 @@
+import { UserProfile } from "@clerk/clerk-react";
+
 function SettingsPage() {
   return (
-    <div>SettingsPage</div>
-  )
+    <>
+      <UserProfile />
+    </>
+  );
 }
-export default SettingsPage
+export default SettingsPage;

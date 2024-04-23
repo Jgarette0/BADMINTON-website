@@ -51,8 +51,9 @@ export const HoverEffect = ({
           <Card>
             <CardTitle>
               <img
+                loading="lazy"
                 src={item.img}
-                className="rounded-sm transition-transform duration-300 ease-in-out "
+                className="rounded-sm transition-transform duration-300 ease-in-out"
                 alt={item.img}
               />
             </CardTitle>

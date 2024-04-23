@@ -20,12 +20,18 @@ import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
 export function SidebarRoute() {
   const pages = [
     "Home",
-    "Program",
     "Gallery",
+    "Program",
     "About",
-    "FAQs",
-    "Blog",
+    "Location",
+    "Payment",
+    "Support",
+    "FAQ",
+    "Team",
+    "Settings",
+    "Terms",
     "Contact",
+    "Docs",
     "Shop",
   ];
 
@@ -50,7 +56,7 @@ export function SidebarRoute() {
             </SheetClose>
           </Link>
           <SheetDescription className=" flex flex-col place-items-center w-full">
-            Navigate your dreams through Sports
+            Build champions in life
           </SheetDescription>
         </SheetHeader>
         <div className="flex flex-col w-full h-8 pt-5">
@@ -86,13 +92,13 @@ export function SidebarRoute() {
                   to={`/${item}`}
                   className={({ isActive }) => {
                     return isActive
-                      ? `transition-transform duration-300 ease-in-out transform opacity-40 scale-90`
-                      : `  hover:opacity-70`;
+                      ? `transition-transform duration-300  ease-in-out transform opacity-40 scale-90`
+                      : `  hover:opacity-70 `;
                   }}
                 >
                   <SheetClose asChild>
                     <Button
-                      className="text-lg font-semibold opacity-85 flex flex-row justify-center w-72 hover:opacity-90 py-11 px-8 font-mona"
+                      className=" font-semibold opacity-85 flex flex-row justify-center w-72 hover:opacity-90 py-11 px-8 font-dahlia text-5xl"
                       variant="secondary"
                     >
                       <div>{item.toUpperCase()}</div>
