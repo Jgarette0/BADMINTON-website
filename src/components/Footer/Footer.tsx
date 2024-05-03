@@ -69,9 +69,9 @@ function Footer() {
               <div className=" font mona font-bold text-xl md:text-2xl md:py-8 py-6 tracking-wider cursor-default select-none mt-12 md:mt-20">
                 Contact Us
               </div>
-              <a href="tel:0966180854">
+              <a href="tel:09666058139">
                 <div className="group/item  tracking-wide text-md md:text-lg hover:opacity-60 text-secondary-foreground font-semibold opacity-80 flex flex-row gap-1 relative pr-7">
-                  0966180854
+                  09666058139
                   <ExternalLink className="group-hover/item:translate-x-1 group-hover/item:-translate-y-1 transition-transform duration-300 ease-in-out h-5 absolute right-0" />
                 </div>
               </a>
