@@ -59,7 +59,7 @@ function ContactLinks() {
               </div>
             </Card>
           </a>
-          <a className="w-full" href="tel:09661808543">
+          <a className="w-full" href="tel:09666058139">
             <Card className="w-full rounded-[4rem] h-80 hover:bg-secondary cursor-pointer flex flex-row md:p-8  p-4 gap-8 group justify-between">
               <div className=" flex flex-row gap-8">
                 <img src="img/call.png" className="object-cover " alt="" />
