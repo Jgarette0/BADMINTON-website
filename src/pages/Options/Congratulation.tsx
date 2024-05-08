@@ -1,10 +1,12 @@
 import ToolList from "@/Layout/ToolList";
-import Congratulations from "@/pages/Options/Congratulations";
-
+import { Suspense, lazy } from "react";
+const Congratulations = lazy(() => import("@/pages/Options/Congratulations"));
 function Congratulation() {
   return (
     <>
-      <Congratulations />
+     <Suspense>
+     <Congratulations />
+     </Suspense>
       <ToolList />
     </>
   );

@@ -11,7 +11,16 @@ export function CongratsImg() {
       image: "./img/cvraa2.jpg",
     },
     {
+      image: "./img/cvraa8.jpg",
+    },
+    {
       image: "./img/cvraa1.jpg",
+    },
+    {
+      image: "./img/cvraa6.jpg",
+    },
+    {
+      image: "./img/cvraa7.jpg",
     },
     {
       image: "./img/cvraa2.jpg",
@@ -21,6 +30,9 @@ export function CongratsImg() {
     },
     {
       image: "./img/cvraa3.jpg",
+    },
+    {
+      image: "./img/cvraa5.jpg",
     },
     {
       image: "./img/cvraa4.jpg",
