@@ -1,11 +1,14 @@
-import AccordionDemo from "./Accordiyown";
-import DraftNecessary from "./Draft-0";
+// import AccordionDemo from "./Accordiyown";
+// import DraftNecessary from "./Draft-0";
+
+import Congratulation from "../pages/Options/Congratulations";
 
 function Draft() {
   return (
     <>
-      <DraftNecessary />
-      <AccordionDemo />
+      {/* <DraftNecessary />
+      <AccordionDemo /> */}
+      <Congratulation />
     </>
   );
 }

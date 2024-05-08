@@ -118,5 +118,15 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
+  plugins: [addVariablesForColors],
 };
 // bg-gradient-to-b from-pink-50 to-red-100
+function addVariablesForColors({ addBase, theme }) {
+  let newVars = Object.fromEntries(
+    Object.entries(theme("colors")).map(([key, val]) => [`--color-${key}`, val])
+  );
+
+  addBase({
+    ":root": newVars,
+  });
+}

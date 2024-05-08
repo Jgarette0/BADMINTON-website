@@ -1,5 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { lazy } from "react";
+import Congratulation from "./pages/Options/Congratulation";
 
 const PaymentPage = lazy(() => import("./pages/Options/Payment"));
 const GlobalPage = lazy(() => import("./pages/Global"));
@@ -94,6 +95,10 @@ const Routers = () => {
           element: <SignUpPage />,
         },
       ],
+    },
+    {
+      path: "/congratulation",
+      element: <Congratulation />,
     },
     {
       path: "/somethings",

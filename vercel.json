@@ -15,6 +15,7 @@
     { "src": "/location", "dest": "/" },
     { "src": "/terms", "dest": "/" },
     { "src": "/docs", "dest": "/" },
+    { "src": "/congratulation", "dest": "/" },
     { "src": "/signin", "dest": "/" },
     { "src": "/signup", "dest": "/" },
     { "src": "/somethings", "dest": "/" },
