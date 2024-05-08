@@ -5,7 +5,7 @@ import CongratsImg from "./CongratsImg";
 export function Congrats() {
   return (
     <>
-      <div className="h-screen w-screen overflow-hidden bg-white relative flex flex-col items-center justify-center antialiased">
+      <div className="mt-24 w-screen overflow-hidden bg-white relative flex flex-col items-center gap-12 antialiased">
         <Confetti />
         <div className="max-w-2xl md:max-w-4xl mx-auto p-4">
           <h1 className="relative z-10 text-3xl md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-blue-200 to-green-400  text-center font-sans font-bold leading-none tracking-tighter">
@@ -30,8 +30,7 @@ export function Congrats() {
           </p>
         </div>
         <BackgroundBeams />
-        <div className="h-32"></div>
-        <div className="fixed bottom-4">
+        <div className="">
           <CongratsImg />
         </div>
       </div>
