@@ -4,7 +4,7 @@ const Congratulations = lazy(() => import("@/pages/Options/Congratulations"));
 function Congratulation() {
   return (
     <>
-      <div className="w-full h-full bg-white">
+      <div className="w-screen h-full ">
         <Suspense>
           <Congratulations />
         </Suspense>
