@@ -10,7 +10,7 @@ function Cvraa() {
   return (
     <>
       {isVisible && (
-        <div className="group fixed bottom-4 left-4 w-[300px] rounded-md hover:bg-primary-foreground transition-all duration-400 ease-in-out cursor-pointer bg-primary">
+        <div className="group fixed top-4 left-4 w-[300px] rounded-md hover:bg-primary-foreground transition-all duration-400 ease-in-out cursor-pointer bg-primary">
           <div className="relative">
             <a href="/congratulation">
               <img src="img/cvraa.png" alt="" className="object-cover" />
