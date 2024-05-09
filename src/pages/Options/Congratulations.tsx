@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Congrats } from "@/Layout/Congrats";
 
 export default function Congratulations() {
-  const [count, setCount] = useState(5);
+  const [count, setCount] = useState(3);
   const [isComplete, setIsComplete] = useState(false);
 
   useEffect(() => {

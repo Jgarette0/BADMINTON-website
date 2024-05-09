@@ -5,6 +5,7 @@ import ToolList from "@/Layout/ToolList";
 import { Suspense, lazy } from "react";
 import LoadingSpinner from "@/Layout/LoadingSpinner";
 import { Toaster } from "@/components/ui/sonner";
+import Cvraa from "@/Layout/Cvraa";
 const HomePage = lazy(() => import("./Home"));
 const GlobalPage = () => {
   const location = useLocation();
@@ -19,6 +20,7 @@ const GlobalPage = () => {
       </Suspense>
       <ToolList />
       <Toaster />
+      <Cvraa />
     </>
   );
 };
